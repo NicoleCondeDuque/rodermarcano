@@ -1557,12 +1557,20 @@ body.dark-theme {
 .btn-wsp:hover{
   background: #20ba5a;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
-  .btn-wsp{
-      width:63px;
-      height:63px;
-      line-height: 66px;
-  bottom:95px;
-  right:15px; 
-}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .btn-wsp {
+    width: 80px;
+    height: 80px;
+    line-height: 83px;
+    font-size: 40px;
+    bottom: 90px;
+    right: 10px;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .btn-wsp {
+      background:  #20ba5a;
+    }
+  }
+  
 }
