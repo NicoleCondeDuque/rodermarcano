@@ -149,11 +149,40 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home__perfil, .about__image, .contact__mail`, { origin: "right" });
 sr.reveal(
-  `.home__name, .home__name__rod, .home__info, 
+  `.background__text, .home__instituto, .home__name, .home__name__rod, .home__info, 
             .about__container .section__title-1, .about__info, 
             .contact__social, .contact__data`,
   { origin: "left" }
 );
 sr.reveal(`.services__card, .projects__card`, { interval: 100 });
+
+/*=============== MAS INFO ===============*/
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const readMoreBtn = document.querySelector('.read-more-btn');
+  const additionalInfo = document.querySelector('.about__additional-info');
+
+  readMoreBtn.addEventListener('click', () => {
+    additionalInfo.classList.toggle('hidden');
+
+   
+    if (additionalInfo.classList.contains('hidden')) {
+      readMoreBtn.textContent = 'Ler mais';
+      readMoreBtn.classList.remove('open');
+    } else {
+      readMoreBtn.textContent = 'Fechar';
+      readMoreBtn.classList.add('open');
+    }
+  });
+});
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 
 

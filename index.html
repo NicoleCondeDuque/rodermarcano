@@ -1,284 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/tecnologias.jpeg"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
-      crossorigin=""
-    />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/tecnologias.jpeg" type="image/x-icon" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
- 
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="" />
 
-    <title>IntegraSkin </title>
-   
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <span class="nav__logo-circle">IS</span>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-          <span class="nav__logo-name">IntegraSkin</span>
-        </a>
 
-        <div class="nav__menu" id="nav-menu">
-          <span class="nav__title">Menu</span>
+  <title>IntegraSkin </title>
 
-          <h3 class="nav__name">IntegraSkin </h3>
+</head>
 
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Inicio</a>
-            </li>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-circle">IS</span>
 
-            <li class="nav__item">
-              <a href="#about" class="nav__link">Sobre mi</a>
-            </li>
+        <span class="nav__logo-name">IntegraSkin</span>
+      </a>
 
-            <li class="nav__item">
-              <a href="#service" class="nav__link">Tratamientos</a>
-            </li>
+      <div class="nav__menu" id="nav-menu">
+        <span class="nav__title">Menu</span>
 
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">Testimonios</a>
-            </li>
+        <h3 class="nav__name">IntegraSkin </h3>
 
-            <li class="nav__item">
-              <a href="#contact" class="nav__link nav__link-button"
-                >Contactame</a
-              >
-            </li>
-          </ul>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Inicio</a>
+          </li>
 
-          <!-- Close button -->
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
-          </div>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Sobre mi</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#service" class="nav__link">Tratamientos</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Testimonios</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link nav__link-button">Contactame</a>
+          </li>
+        </ul>
+
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
         </div>
+      </div>
 
-         <div class="nav__buttons"> 
-          <!-- Theme button -->
-           <i class="ri-moon-line change-theme" id="theme-button"></i> 
+      <div class="nav__buttons">
+        <!-- Theme button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-          <!-- Toggle button -->
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-4-line"></i>
-          </div> 
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section background__rod" id="home">
-        <div class="home__container container grid">
-          <div class="home__tittle background__black">
-          <h2 class="home__instituto">Instituto clínico</h2>
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section background__rod background__rod-1" id="home">
+      <div class="grid">
+        <div class="home__title background__text">
+          <h2 class="home__instituto">Clínica</h2>
           <h1 class="home__name">IntegraSkin</h1>
           <h3 class="home__name__rod">By Dr. Rod</h3>
         </div>
-          <div class="home__perfil">
-            <div class="home__image">
-              <img
-                src="assets/img/home-perfil.jpg"
-                alt="image"
-                class="home__img"
-              />
-              <div class="home__shadow"></div>
+      </div>
+    </section>
 
-              <!--<img
-                src="assets/img/curved-arrow.svg"
-                alt=""
-                class="home__arrow"
-              />-->
-              <!--<img
-                src="assets/img/random-lines.svg"
-                alt=""
-                class="home__line"
-              />-->
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <div class="about__container container grid">
+        <h2 class="section__title-1">
+          <span> DR RODDER MARCANO. </span>
+        </h2>
 
-              <!--<div class="geometric-box"></div>-->
-            </div>
+        <div class="about__perfil">
+          <div class="about__image">
+            <img src="assets/img/about-perfil.jpg" alt="image" class="about__img" />
 
-            <!-- <div class="home__social">
-              <a
-                href="https://www.facebook.com/"
-                class="contact__social-link"
-                target="_blank"
-              >
-                <i class="ri-facebook-circle-line"></i>
-              </a>
-
-              <a
-                href="https://www.instagram.com/"
-                class="contact__social-link"
-                target="_blank"
-              >
-                <i class="ri-instagram-line"></i>
-              </a>
-
-              <a
-                href="https://www.linkedin.com/"
-                class="contact__social-link"
-                target="_blank"
-              >
-                <i class="ri-linkedin-box-line"></i>
-              </a>
-            </div> -->
+            <div class="about__shadow"></div>
+            <div class="about__box"></div>
           </div>
+        </div>
 
-          <div class="home__info">
-            <!-- <p class="home__description">
-              <b>Especialista en medicina estética y dermatología</b>,
-              comprometido con la excelencia, la experiencia en el cuidado de la
-              piel y la comprensión de los procesos evolutivos del ser humano me
-              permiten ofrecer cuidados clínicos y estéticos de alta calidad.
-            </p> -->
+        <div class="about__info">
+          <p class="about__description">
+            Especialista em medicina estética, dermatologia e da saúde familiar, comprometido com a excelência, a
+            experiência em cuidados com a pele e o entendimento dos processos evolutivos do ser humano, permitindo
+            oferecer atendimentos clínicos e estéticos de alta qualidade.
 
-            <a href="#about" class="home__scroll">
-              <div class="home__scroll-box">
-                <i class="ri-arrow-down-s-line"></i>
-              </div>
+          </p>
+          <p class="">
+            Con más de una década de experiencia y un historial de más de
+            100,000 procedimientos estéticos exitosos, he encontrado mi
+            verdadera pasión en proporcionar un cuidado amable, altamente
+            calificado y personalizado. Mi enfoque se dirige a aquellos
+            perfiles exigentes que buscan el equilibrio perfecto entre salud y
+            estética. Me enorgullece resaltar el arte y la belleza en todas
+            sus proporciones, brindando resultados excepcionales a mis
+            pacientes.
+          </p><br>
 
-              <span class="home__scroll-text"></span>
+        
+
+          <div class="about__additional-info hidden">
+            <ul class="about__list">
+              <li class="about__item"><b>SOB O MÉDICO.
+              MPPS: 92.105 CMNE: 3.290 RMS-SP: 3502952.</b>
+              Dr. Rodder Marcano, é médico cirurgião venezuelano, formado pela prestigiosa Universidade do Oriente –
+              Venezuela 2012. Especialista em Saúde da Família por a Universidade Federal Paulista – São Paulo 2014 e
+              possui estudos em Dermatologia pela Faculdade Centro Sul do Paraná, 2016.</li><br>
+
+              <li class="about__item"><b>Seus primeiros estudos estéticos foram realizados no Universidade de Carabobo</b> – Venezuela 2012;
+              Dermatologia Clínica no Colégio Ibero-Americano de Dermatologia e deu inicio na Medicina Ortomolecular na
+              Argentina 2022.</li><br>
+
+              <li class="about__item"><b>Além de outras conquistas formativas importantes</b>, que hoje fazem parte da atualização contínua que o
+              mantém ativo nas tecnologias emergentes.</li><br>
+
+              <li class="about__item"><b>Dr. Rodder desde o início de sua prática médica tem se comprometido</b> em ser parceiro de outros grandes
+              profissionais, interagindo, compartilhando conhecimentos e experiências por meio de palestras e cursos
+              voltados principalmente para a grande área dermato-estética injetável respaldado de diversos institutos
+              reconhecidos da Venezuela, da Europa e de outros países.</li><br>
+
+              <li class="about__item"><b>São mais de 10 anos de experiência e mais de 100.000 procedimentos estéticos realizados!</b>, o Dr. Rodder
+              encontrou sua paixão num serviço que escuta ativamente ao paciente, trabalha as expectativas, personaliza
+              os tratamentos e atinge níveis de excelência para perfis exigentes que procuram cuidar da saúde e da
+              estética sob um só olhar que destaca arte e beleza em todas as proporções da preciosa diversidade.</li><br>
+
+              <li class="about__item"><b>O Dr. se encanta e entende de todos os processos evolutivos do ser humano e de cuidados com a pele,</b> não
+              dedicando-se apenas em entregar os melhores resultados estéticos, se não também em aportar qualidade de
+              vida, renovação e saúde desde uma esfera mais completa. Mantendo-se conectado nas atualizações nacionais e
+              internacionais afim de oferecer o melhor dos tratamentos disponíveis.</li><br>
+
+              <li class="about__item"><b>Seja bem-vindo a uma atenção acolhedora e dedicada aliado ao seu bem-estar e potencial beleza.</b></li>
+           
+            </ul>
+          </div>
+          <div class="about__readmore">
+            <button class="about__buttons read-more-btn">Ler mais</button>
+          </div>
+          <div class="about__buttons">
+            <a href="#contact" class="button">
+              <i class="ri-send-plane-line"></i> Contactame
+            </a>
+            <a href="https://www.instagram.com/integraskin24/" class="contact__social-link" target="_blank">
+              <i class="ri-instagram-line"></i>
             </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <div class="about__container container grid">
-          <h2 class="section__title-1">
-            <span>Sobre mi</span>
-          </h2>
+    <!--==================== SERVICES ====================-->
+    <section class="services section background__rod " id="service">
+      <div></div>
+      <h2 class="section__title-2 tratamientos">
+        <span>Tratamentos</span>
+      </h2>
+      <div class="services__container  grid">
 
-          <div class="about__perfil">
-            <div class="about__image">
-              <img
-                src="assets/img/about-perfil.jpg"
-                alt="image"
-                class="about__img"
-              />
+        <button class="button__tratamientos">
+          <a class="button__tratamientos-inter" href="tecnologias.html">
+            Tecnologias
+          </a>
+        </button>
 
-              <div class="about__shadow"></div>
+        <button class="button__tratamientos">
+          <a class="button__tratamientos-inter" href="tratamientos-corporales.html">
+            Tratamentos Corporais
+          </a>
+        </button>
 
-              <!--<div class="geometric-box"></div>-->
-              <!--<img
-                src="assets/img/random-lines.svg"
-                alt=""
-                class="about__line"
-              />-->
-              <div class="about__box"></div>
-            </div>
-          </div>
+        <button class="button__tratamientos">
+          <a class="button__tratamientos-inter" href="tratamientos-faciales.html">
+            Tratamentos Faciais
+          </a>
+        </button>
 
-          <div class="about__info">
-            <p class="about__description">
-              Soy el Dr. Rodder Marcano, egresado de la Universidad de Oriente
-              en Venezuela. Además, cuento con una especialización en Salud
-              Familiar en Sao Paulo, Brasil, así como estudios de Dermatología
-              realizados en la Facultad Centro Sul de Paraná, Brasil. Completé
-              con éxito el programa de Dermatología Clínica en el prestigioso
-              Colegio Iberoamericano de Dermatología en Argentina.
-              Recientemente, he dado inicio a mis estudios en Medicina
-              Ortomolecular.
-            </p>
-            <!--<p class="about__description">
-              Con más de una década de experiencia y un historial de más de
-              100,000 procedimientos estéticos exitosos, he encontrado mi
-              verdadera pasión en proporcionar un cuidado amable, altamente
-              calificado y personalizado. Mi enfoque se dirige a aquellos
-              perfiles exigentes que buscan el equilibrio perfecto entre salud y
-              estética. Me enorgullece resaltar el arte y la belleza en todas
-              sus proporciones, brindando resultados excepcionales a mis
-              pacientes.
-            </p>-->
+        <button class="button__tratamientos">
+          <a class="button__tratamientos-inter" href="tratamientos-capilares.html">
+            Tratamentos Capilares
+          </a>
+        </button>
 
-            <ul class="about__list">
-              <li class="about__item">
-                <b>Mis especialidades:</b> Dermatologia y Estetica.
-              </li>
-            </ul>
-            <div class="about__buttons">
-              <a href="#contact" class="button">
-                <i class="ri-send-plane-line"></i> Contactame
-              </a>
-              <a
-                href="https://www.instagram.com/integraskin24/"
-                class="contact__social-link"
-                target="_blank"
-              >
-                <i class="ri-instagram-line"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
+    <!--==================== PROJECTS ====================-->
+    <section class="projects section" id="projects">
 
-      <!--==================== SERVICES ====================-->
-      <section class="services section background__rod " id="service">
-        <div></div>
-        <h2 class="section__title-2 tratamientos">
-          <span>Tratamientos</span>
-        </h2>
-        <div class="services__container container grid">
-
-          <button class="Btn">
-            <a class="btn-inter" href="tecnologias.html" >
-             Tecnologías
-            </a> 
-          </button>
-
-          <button class="Btn">
-            <a class="btn-inter" href="tratamientos-corporales.html" >
-              Tratamientos Corporales
-            </a> 
-          </button>
-
-          <button class="Btn">
-            <a class="btn-inter" href="tratamientos-faciales.html" >
-              Tratamientos faciales
-            </a> 
-          </button>
-
-          <button class="Btn">
-            <a class="btn-inter" href="tratamientos-capilares.html" >
-              Tratamientos Capilares
-            </a> 
-          </button>
-        
-        </div>
-      </section>
-      <!--==================== PROJECTS ====================-->
-      <section class="projects section" id="projects">
-        
-        <h2 class="section__title-1">
-          <span>Testimonios</span>
-        </h2>
-
-   
+      <h2 class="section__title-1">
+        <span>Testimonios</span>
+      </h2>
 
 
 
-        <div class="projects__container container grid">
-          <article class="projects__card">
-            <!-- <div class="projects__image">
+      <div class="projects__container container grid">
+        <article class="projects__card">
+          <!-- <div class="projects__image">
               <img
                 src="assets/img/project-1.jpg"
                 alt="image"
@@ -290,24 +230,24 @@
               </a>
             </div> -->
 
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Marjorie</h3>
-              <h2 class="projects__title">🇻🇪</h2>
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Marjorie</h3>
+            <h2 class="projects__title">🇻🇪</h2>
 
-              <p class="projects__description">
-                Hola, acudí con el Dr por un
-                problema de melasma que me
-                incomoda desde hace un [empo
-                y realmente me siento bastante
-                sa[sfecha con los resultados que
-                hemos obtenido. Cada día noto
-                un cambio en mi piel y eso lo
-                aprecio mucho. 100%
-                recomendado 💝
-              </p>
-            </div>
+            <p class="projects__description">
+              Hola, acudí con el Dr por un
+              problema de melasma que me
+              incomoda desde hace un [empo
+              y realmente me siento bastante
+              sa[sfecha con los resultados que
+              hemos obtenido. Cada día noto
+              un cambio en mi piel y eso lo
+              aprecio mucho. 100%
+              recomendado 💝
+            </p>
+          </div>
 
-            <!-- <div class="projects__buttons">
+          <!-- <div class="projects__buttons">
               <a
                 href="https://github.com/"
                 target="_blank"
@@ -324,10 +264,10 @@
                 <i class="ri-dribbble-line"></i> View
               </a>
             </div> -->
-          </article>
+        </article>
 
-          <article class="projects__card">
-            <!-- <div class="projects__image">
+        <article class="projects__card">
+          <!-- <div class="projects__image">
               <img
                 src="assets/img/project-2.jpg"
                 alt="image"
@@ -339,27 +279,27 @@
               </a>
             </div> -->
 
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Jesús S.</h3>
-              <h2 class="projects__title">🇻🇪</h2>
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Jesús S.</h3>
+            <h2 class="projects__title">🇻🇪</h2>
 
-              <p class="projects__description">
-                Acudí con el dr por un problema
-                de acné severo desde la
-                adolescencia después de acudir a
-                varios especialistas y probar
-                muchos tratamientos tópicos y
-                orales ninguno daba resultado. El
-                dr me indico un tratamiento
-                específico y el resultado
-                maravilloso. Mi acne
-                desapareció. Mi cara ahora muy
-                limpia y sin cicatrices. Lo
-                recomiendo 100 %
-              </p>
-            </div>
+            <p class="projects__description">
+              Acudí con el dr por un problema
+              de acné severo desde la
+              adolescencia después de acudir a
+              varios especialistas y probar
+              muchos tratamientos tópicos y
+              orales ninguno daba resultado. El
+              dr me indico un tratamiento
+              específico y el resultado
+              maravilloso. Mi acne
+              desapareció. Mi cara ahora muy
+              limpia y sin cicatrices. Lo
+              recomiendo 100 %
+            </p>
+          </div>
 
-            <!-- <div class="projects__buttons">
+          <!-- <div class="projects__buttons">
               <a
                 href="https://github.com/"
                 target="_blank"
@@ -376,10 +316,10 @@
                 <i class="ri-dribbble-line"></i> View
               </a>
             </div> -->
-          </article>
+        </article>
 
-          <article class="projects__card">
-            <!-- <div class="projects__image">
+        <article class="projects__card">
+          <!-- <div class="projects__image">
               <img
                 src="assets/img/project-3.jpg"
                 alt="image"
@@ -391,24 +331,24 @@
               </a>
             </div> -->
 
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Angel</h3>
-              <h2 class="projects__title">🇻🇪</h2>
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Angel</h3>
+            <h2 class="projects__title">🇻🇪</h2>
 
-              <p class="projects__description">Gracias al Dr. Rodder mi piel luce
-                muchísimo más sana y radiante, y
-                eso es debido a sus tratamientos e
-                indicaciones para cuidados diarios.
-                Es bastante atento y educado, por lo
-                que lo considero mi dermatólogo de
-                confianza. Me ha tratado problemas
-                de acné y sus cicatrices. También,
-                me extrajo un quiste sebáceo y
-                quedé encantado con la sutileza. Por
-                experiencia propia, el mejor en
-                dermatología.</p>
-            </div>
-<!-- 
+            <p class="projects__description">Gracias al Dr. Rodder mi piel luce
+              muchísimo más sana y radiante, y
+              eso es debido a sus tratamientos e
+              indicaciones para cuidados diarios.
+              Es bastante atento y educado, por lo
+              que lo considero mi dermatólogo de
+              confianza. Me ha tratado problemas
+              de acné y sus cicatrices. También,
+              me extrajo un quiste sebáceo y
+              quedé encantado con la sutileza. Por
+              experiencia propia, el mejor en
+              dermatología.</p>
+          </div>
+          <!-- 
             <div class="projects__buttons">
               <a
                 href="https://github.com/"
@@ -426,9 +366,9 @@
                 <i class="ri-dribbble-line"></i> View
               </a>
             </div> -->
-          </article>
+        </article>
 
-          <!--<article class="projects__card">
+        <!--<article class="projects__card">
 
             <div class="projects__image">
               <img
@@ -512,8 +452,8 @@
               </a>
             </div>
           </article>-->
-          <article class="projects__card">
-            <!-- <div class="projects__image">
+        <article class="projects__card">
+          <!-- <div class="projects__image">
               <img
                 src="assets/img/project-1.jpg"
                 alt="image"
@@ -525,379 +465,353 @@
               </a>
             </div> -->
 
-            <div class="projects__content">
-              <h3 class="projects__subtitle">María Helena</h3>
-              <h2 class="projects__title">Chile</h2>
+          <div class="projects__content">
+            <h3 class="projects__subtitle">María Helena</h3>
+            <h2 class="projects__title">Chile</h2>
 
-              <p class="projects__description">
-                Feliz!!!! Por los resultados del
-                tratamiento de botox y acido
-                hialurónico. Me saco un lunar de mi
-                nariz que por mucho tiempo me
-                complico, Tratamiento rápido sin dolor
-                ni complicaciones después de su
-                aplicación. Una atención maravillosa
-                y dio seguimiento a mi tratamiento
-                totalmente recomendable.
-              </p>
-            </div>
-
-            <!-- <div class="projects__buttons">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-
-              <a
-                href="https://dribbble.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-dribbble-line"></i> View
-              </a>
-            </div> -->
-          </article>
-          <article class="projects__card">
-            <!-- <div class="projects__image">
-              <img
-                src="assets/img/project-1.jpg"
-                alt="image"
-                class="projects__img"
-              />
-
-              <a href="#" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div> -->
-
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Patricia</h3>
-              <h2 class="projects__title">Chile</h2>
-
-              <p class="projects__description">
-                Me coloqué hilos tensores con este
-médico, de entrada se le nota la
-profesionalidad, mas encima [ene
-unas manos de monja, con las que no
-se llega a sen[r nada de dolor y con
-efec[vos resultados. Su[l y bonito su
-trabajo. Una vez más lo felicito.
-              </p>
-            </div>
-
-            <!-- <div class="projects__buttons">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-
-              <a
-                href="https://dribbble.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-dribbble-line"></i> View
-              </a>
-            </div> -->
-          </article>
-          <article class="projects__card">
-            <!-- <div class="projects__image">
-              <img
-                src="assets/img/project-1.jpg"
-                alt="image"
-                class="projects__img"
-              />
-
-              <a href="#" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div> -->
-
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Pamela</h3>
-              <h2 class="projects__title">Chile</h2>
-
-              <p class="projects__description">
-                Encantada y agradecida por tan
-                excelente atención. El Dr Rodder te
-                explica y te muestra lo que va a
-                aplicar, te entrega información de los
-                productos, te los muestra y te da las
-                instrucciones que debemos seguir.
-                Todo transparente, de confiar y
-                entregando resultados 100%
-                recomendados. Botox, PRP, Ácido
-                Hialurónico.
-              </p>
-            </div>
-
-            <!-- <div class="projects__buttons">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-
-              <a
-                href="https://dribbble.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-dribbble-line"></i> View
-              </a>
-            </div> -->
-          </article>
-          <article class="projects__card">
-            <!-- <div class="projects__image">
-              <img
-                src="assets/img/project-1.jpg"
-                alt="image"
-                class="projects__img"
-              />
-
-              <a href="#" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div> -->
-
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Erika</h3>
-              <h2 class="projects__title">Brasil</h2>
-
-              <p class="projects__description">
-                Olá! Fiz procedimento com o Dr
-Rodder, de entrada voce já se sente
-entre amigos, foi uma experiencia
-proa[va, fizemos microagulhamento,
-muito tranquilo e o resultado bastante
-sa[sfatório. Posso indicar sem erro,
-excelente profissional com ó[mos
-productos. Super recomendo, o
-melhor.
-              </p>
-            </div>
-
-            <!-- <div class="projects__buttons">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-
-              <a
-                href="https://dribbble.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-dribbble-line"></i> View
-              </a>
-            </div> -->
-          </article>
-          <article class="projects__card">
-            <!-- <div class="projects__image">
-              <img
-                src="assets/img/project-1.jpg"
-                alt="image"
-                class="projects__img"
-              />
-
-              <a href="#" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div> -->
-
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Tereza</h3>
-              <h2 class="projects__title">Brasil</h2>
-
-              <p class="projects__description">
-                Dr, o procedimento dos lábios ficou top
-                demais, ficaram lindos!!! E minha pele
-                maravilhosa!!! Amei o resultado!!!! Muito
-                obrigada!!!!
-              </p>
-            </div>
-
-            <!-- <div class="projects__buttons">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-
-              <a
-                href="https://dribbble.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-dribbble-line"></i> View
-              </a>
-            </div> -->
-          </article>
-          <article class="projects__card">
-            <!-- <div class="projects__image">
-              <img
-                src="assets/img/project-1.jpg"
-                alt="image"
-                class="projects__img"
-              />
-
-              <a href="#" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div> -->
-
-            <div class="projects__content">
-              <h3 class="projects__subtitle">Priscila</h3>
-              <h2 class="projects__title">Brasil</h2>
-
-              <p class="projects__description">
-                O Rodder é muito profissional. Faz
-                tudo com muito carinho e
-                perfeitamente. Quem fez algum
-                procedimento com ele sabe o
-                quanto vale a pena. Recomendo
-                muito. Peeling.
-              </p>
-            </div>
-
-            <!-- <div class="projects__buttons">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-github-line"></i> View
-              </a>
-
-              <a
-                href="https://dribbble.com/"
-                target="_blank"
-                class="projects__link"
-              >
-                <i class="ri-dribbble-line"></i> View
-              </a>
-            </div> -->
-          </article>
-        </div>
-      </section>
-
-      <!--==================== CONTACT ====================-->
-      <section class="contact section background__rod" id="contact">
-        <div class="contact__container grid">
-          <div class="contact__data">
-            <h2 class="section__title-2">
-              <span>Contactame:</span>
-            </h2>
-
-            <p class="contact__description-1">
-              <b>Respondere tu correo tan pronto sea posible🤍</b>
+            <p class="projects__description">
+              Feliz!!!! Por los resultados del
+              tratamiento de botox y acido
+              hialurónico. Me saco un lunar de mi
+              nariz que por mucho tiempo me
+              complico, Tratamiento rápido sin dolor
+              ni complicaciones después de su
+              aplicación. Una atención maravillosa
+              y dio seguimiento a mi tratamiento
+              totalmente recomendable.
             </p>
-
-            <p class="contact__description-2">
-              Al enviarme tu <b>nombre</b> y <b> correo electronico</b>, explicandome el tratamiento en el que te encuentras interesada/o o necesidad estetica, podre ser mas preciso con la respuesta (<b>Importante:</b>todo tratamiento es personalizado). 
-            </p>
-
-            <!--<div class="geometric-box"></div>-->
           </div>
 
-          <div class="contact__mail">
-            <h2 class="contact__title">Enviar mensaje</h2>
+          <!-- <div class="projects__buttons">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
 
-            <form action="" class="contact__form" id="contact-form">
-              <div class="contact__group">
-                <div class="contact__box">
-                  <input
-                    type="text"
-                    name="user_name"
-                    class="contact__input"
-                    id="name"
-                    required
-                    placeholder="Nombre"
-                  />
-                  <label for="name" class="contact__label">Nombre</label>
-                </div>
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div> -->
+        </article>
+        <article class="projects__card">
+          <!-- <div class="projects__image">
+              <img
+                src="assets/img/project-1.jpg"
+                alt="image"
+                class="projects__img"
+              />
 
-                <div class="contact__box">
-                  <input
-                    type="email"
-                    name="user_email"
-                    class="contact__input"
-                    id="email"
-                    required
-                    placeholder="Correo electronico"
-                  />
-                  <label for="email" class="contact__label"
-                    >Correo electronico</label
-                  >
-                </div>
+              <a href="#" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div> -->
+
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Patricia</h3>
+            <h2 class="projects__title">Chile</h2>
+
+            <p class="projects__description">
+              Me coloqué hilos tensores con este
+              médico, de entrada se le nota la
+              profesionalidad, mas encima [ene
+              unas manos de monja, con las que no
+              se llega a sen[r nada de dolor y con
+              efec[vos resultados. Su[l y bonito su
+              trabajo. Una vez más lo felicito.
+            </p>
+          </div>
+
+          <!-- <div class="projects__buttons">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div> -->
+        </article>
+        <article class="projects__card">
+          <!-- <div class="projects__image">
+              <img
+                src="assets/img/project-1.jpg"
+                alt="image"
+                class="projects__img"
+              />
+
+              <a href="#" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div> -->
+
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Pamela</h3>
+            <h2 class="projects__title">Chile</h2>
+
+            <p class="projects__description">
+              Encantada y agradecida por tan
+              excelente atención. El Dr Rodder te
+              explica y te muestra lo que va a
+              aplicar, te entrega información de los
+              productos, te los muestra y te da las
+              instrucciones que debemos seguir.
+              Todo transparente, de confiar y
+              entregando resultados 100%
+              recomendados. Botox, PRP, Ácido
+              Hialurónico.
+            </p>
+          </div>
+
+          <!-- <div class="projects__buttons">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div> -->
+        </article>
+        <article class="projects__card">
+          <!-- <div class="projects__image">
+              <img
+                src="assets/img/project-1.jpg"
+                alt="image"
+                class="projects__img"
+              />
+
+              <a href="#" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div> -->
+
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Erika</h3>
+            <h2 class="projects__title">Brasil</h2>
+
+            <p class="projects__description">
+              Olá! Fiz procedimento com o Dr
+              Rodder, de entrada voce já se sente
+              entre amigos, foi uma experiencia
+              proa[va, fizemos microagulhamento,
+              muito tranquilo e o resultado bastante
+              sa[sfatório. Posso indicar sem erro,
+              excelente profissional com ó[mos
+              productos. Super recomendo, o
+              melhor.
+            </p>
+          </div>
+
+          <!-- <div class="projects__buttons">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div> -->
+        </article>
+        <article class="projects__card">
+          <!-- <div class="projects__image">
+              <img
+                src="assets/img/project-1.jpg"
+                alt="image"
+                class="projects__img"
+              />
+
+              <a href="#" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div> -->
+
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Tereza</h3>
+            <h2 class="projects__title">Brasil</h2>
+
+            <p class="projects__description">
+              Dr, o procedimento dos lábios ficou top
+              demais, ficaram lindos!!! E minha pele
+              maravilhosa!!! Amei o resultado!!!! Muito
+              obrigada!!!!
+            </p>
+          </div>
+
+          <!-- <div class="projects__buttons">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div> -->
+        </article>
+        <article class="projects__card">
+          <!-- <div class="projects__image">
+              <img
+                src="assets/img/project-1.jpg"
+                alt="image"
+                class="projects__img"
+              />
+
+              <a href="#" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div> -->
+
+          <div class="projects__content">
+            <h3 class="projects__subtitle">Priscila</h3>
+            <h2 class="projects__title">Brasil</h2>
+
+            <p class="projects__description">
+              O Rodder é muito profissional. Faz
+              tudo com muito carinho e
+              perfeitamente. Quem fez algum
+              procedimento com ele sabe o
+              quanto vale a pena. Recomendo
+              muito. Peeling.
+            </p>
+          </div>
+
+          <!-- <div class="projects__buttons">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div> -->
+        </article>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section background__rod" id="contact">
+      <div class="contact__container grid">
+        <div class="contact__data">
+          <h2 class="section__title-2">
+            <span>Contactame:</span>
+          </h2>
+
+          <p class="contact__description-1">
+            <b>Respondere tu correo tan pronto sea posible🤍</b>
+          </p>
+
+          <p class="contact__description-2">
+            Al enviarme tu <b>nombre</b> y <b> correo electronico</b>, explicandome el tratamiento en el que te
+            encuentras interesada/o o necesidad estetica, podre ser mas preciso con la respuesta (<b>Importante:</b>todo
+            tratamiento es personalizado).
+          </p>
+
+          <!--<div class="geometric-box"></div>-->
+        </div>
+
+        <div class="contact__mail">
+          <h2 class="contact__title">Enviar mensaje</h2>
+
+          <form action="" class="contact__form" id="contact-form">
+            <div class="contact__group">
+              <div class="contact__box">
+                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Nombre" />
+                <label for="name" class="contact__label">Nombre</label>
               </div>
 
               <div class="contact__box">
-                <input
-                  type="text"
-                  name="user_subject"
-                  class="contact__input"
-                  id="subject"
-                  required
-                  placeholder="Titulo de tu solicitud"
-                />
-                <label for="subject" class="contact__label"
-                  >Titulo de tu solicitud</label
-                >
+                <input type="email" name="user_email" class="contact__input" id="email" required
+                  placeholder="Correo electronico" />
+                <label for="email" class="contact__label">Correo electronico</label>
               </div>
+            </div>
 
-              <div class="contact__box contact__area">
-                <textarea
-                  name="user_message"
-                  class="contact__input"
-                  id="message"
-                  required
-                  placeholder="Mensaje"
-                ></textarea>
-                <label for="message" class="contact__label">Mensaje</label>
-              </div>
+            <div class="contact__box">
+              <input type="text" name="user_subject" class="contact__input" id="subject" required
+                placeholder="Titulo de tu solicitud" />
+              <label for="subject" class="contact__label">Titulo de tu solicitud</label>
+            </div>
 
-              <p class="contact__message" id="contact-message"></p>
+            <div class="contact__box contact__area">
+              <textarea name="user_message" class="contact__input" id="message" required
+                placeholder="Mensaje"></textarea>
+              <label for="message" class="contact__label">Mensaje</label>
+            </div>
 
-              <button type="submit" class="contact__button button">
-                <i class="ri-send-plane-line"></i> Enviar mensaje
-              </button>
-            </form>
-          </div>
+            <p class="contact__message" id="contact-message"></p>
 
-          <div class="contact__social">
-            <!--<img
+            <button type="submit" class="contact__button button">
+              <i class="ri-send-plane-line"></i> Enviar mensaje
+            </button>
+          </form>
+        </div>
+
+        <div class="contact__social">
+          <!--<img
               src="assets/img/curved-arrow.svg"
               alt=""
               class="contact__social-arrow"
             />-->
 
-            <div class="contact__social-data">
-              <div>
-                <p class="contact__social-description-1">
-                  Gracias por tu tiempo y preferencia
-                </p>
+          <div class="contact__social-data">
+            <div>
+              <p class="contact__social-description-1">
+                Gracias por tu tiempo y preferencia
+              </p>
 
-                <p class="contact__social-description-2">
-                  Te invito a seguirme en mis redes sociales
-                </p>
-              </div>
+              <p class="contact__social-description-2">
+                Te invito a seguirme en mis redes sociales
+              </p>
+            </div>
 
-              <div class="contact__social-links">
-                <!-- <a
+            <div class="contact__social-links">
+              <!-- <a
                   href="https://www.facebook.com/"
                   class="contact__social-link"
                   target="_blank"
@@ -905,75 +819,70 @@ melhor.
                   <i class="ri-facebook-circle-line"></i>
                 </a> -->
 
-                <a
-                  href="https://www.instagram.com/integraskin24/"
-                  class="contact__social-link"
-                  target="_blank"
-                >
-                  <i class="ri-instagram-line"></i>
-                </a>
+              <a href="https://www.instagram.com/integraskin24/" class="contact__social-link" target="_blank">
+                <i class="ri-instagram-line"></i>
+              </a>
 
-                <a
-                  href="https://www.linkedin.com/in/integraskin-by-dr-rod-80557a2b1/"
-                  class="contact__social-link"
-                  target="_blank"
-                >
-                  <i class="ri-linkedin-box-line"></i>
-                </a>
-              </div>
+              <a href="https://www.linkedin.com/in/integraskin-by-dr-rod-80557a2b1/" class="contact__social-link"
+                target="_blank">
+                <i class="ri-linkedin-box-line"></i>
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__container container grid">
-        <ul class="footer__links">
-          <li>
-            <a href="#home" class="footer__link">Inicio</a>
-          </li>
-
-          <li>
-            <a href="#about" class="footer__link">Sobre mi </a>
-          </li>
-          <li>
-            <a href="#service" class="footer__link">Tratamientos</a>
-          </li>
-          <li>
-            <a href="#projects" class="footer__link">Testimonios</a>
-          </li>
-        </ul>
-
-        <span class="footer__copy">
-          &#169; Todos los derechos
-          <a href=""> Rodder Marcano.</a>
-          - By
-          <a href="www.nicoleconde.com"> Nicole Conde</a>
-        </span>
       </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <ul class="footer__links">
+        <li>
+          <a href="#home" class="footer__link">Inicio</a>
+        </li>
+
+        <li>
+          <a href="#about" class="footer__link">Sobre mi </a>
+        </li>
+        <li>
+          <a href="#service" class="footer__link">Tratamientos</a>
+        </li>
+        <li>
+          <a href="#projects" class="footer__link">Testimonios</a>
+        </li>
+      </ul>
+
+      <span class="footer__copy">
+        &#169; Todos los derechos
+        <a href=""> Rodder Marcano.</a>
+        - By
+        <a href="www.nicoleconde.com"> Nicole Conde</a>
+      </span>
+    </div>
 
     <a href="https://wa.link/xmatz1" class="btn-wsp" target="_blank">
-        <i class="fa fa-whatsapp icono"></i>
+      <i class="fa fa-whatsapp icono"></i>
     </a>
-    </footer>
+  </footer>
 
-    <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="ri-arrow-up-s-line"></i>
-    </a>
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-s-line"></i>
+  </a>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+  <!--=============== SCROLLREVEAL ===============-->
+  <script src="assets/js/scrollreveal.min.js"></script>
 
-    <!--=============== EMAIL JS ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!--=============== EMAIL JS ===============-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-    
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  </body>
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
