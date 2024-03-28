@@ -1798,7 +1798,8 @@ font-size: 2rem;
 
 }
 
-@media screen and (max-width: 539px){
+
+@media screen and (min-width: 410px) and (max-width:539px) {
 
   .background__text {
     max-width:90% ;
@@ -1821,6 +1822,34 @@ font-size: 2rem;
   font-size: 1.5rem;
   top:6rem;
   left:16rem;
+   }
+
+
+}
+
+@media screen and (max-width: 409px){
+
+  .background__text {
+    max-width:90% ;
+    max-height:30% ;
+    margin-top: 2rem;
+  }
+
+
+  .home__instituto{
+    top:1rem;
+   left:4rem;
+font-size: 2rem;
+  }
+  .home__name{
+    top:4rem;
+    font-size: 3rem;
+    right: -2rem;
+    }
+.home__name__rod{
+  font-size: 1.5rem;
+  top:6rem;
+  left:14rem;
    }
      
 
