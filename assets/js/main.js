@@ -176,13 +176,43 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+
+
+
+/*=============== carrusel ===============*/
+document.addEventListener('DOMContentLoaded', function() {
+  const btnPrev = document.querySelector('.prev');
+  const btnNext = document.querySelector('.next');
+  const carousel = document.querySelector('.carousel');
+  const cards = carousel.querySelectorAll('.projects__card');
+
+  function scrollCarousel(offset) {
+    // Asume que todas las tarjetas tienen el mismo ancho y márgenes
+    const cardStyle = window.getComputedStyle(cards[0]);
+    const cardMarginRight = parseInt(cardStyle.marginRight, 10);
+    const cardWidth = cards[0].offsetWidth + cardMarginRight;
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+
+    // Calcula el nuevo scrollLeft basado en el ancho de la tarjeta y su margen
+    let newScrollPosition = carousel.scrollLeft + (cardWidth * offset);
+
+    // Implementación básica de 'infinito' al llegar al inicio o al final
+    if (newScrollPosition < 0) {
+      carousel.scrollTo(maxScrollLeft, 0);
+    } else if (newScrollPosition > maxScrollLeft) {
+      carousel.scrollTo(0, 0);
+    } else {
+      carousel.scrollTo(newScrollPosition, 0);
+    }
+  }
+
+  // Evento para el botón "Anterior"
+  btnPrev.addEventListener('click', function() {
+    scrollCarousel(-1);
+  });
+
+  // Evento para el botón "Siguiente"
+  btnNext.addEventListener('click', function() {
+    scrollCarousel(1);
+  });
 });
-
-
-
