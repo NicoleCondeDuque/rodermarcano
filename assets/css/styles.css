@@ -424,6 +424,8 @@ body.dark-theme {
     text-align: center;
     font-family: "Gloock", serif;
     margin: -1rem 5rem -1rem 5rem;
+    position: absolute;    
+    top:13rem;
     
 }
 
@@ -431,7 +433,9 @@ body.dark-theme {
   text-align: end;
   font-family: "Damion", cursive;
   font-size: 3rem;
-  margin-right: 2rem;
+  position: absolute;
+    top: 20rem;
+ 
 
 }
 
@@ -440,8 +444,10 @@ body.dark-theme {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 4rem;
-  margin-left: 8rem;
-  margin-top: 13rem;
+  position: absolute;
+  top: 9rem;
+  left: -4rem;
+
 
 }
 
@@ -732,18 +738,18 @@ body.dark-theme {
   
 }
 .background__rod{
-  background-image: url("../img/background-rod.jpeg");
+  background-image: url("../img/background-rod1.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
- 
+  background-size: cover; 
 }
+
 .background__rod-1{
   background-repeat: no-repeat;
   background-attachment: fixed;
 background-size: cover;
   width: 100%;
-  height: 50rem;
+  height: au;
   
  
 }
@@ -753,6 +759,8 @@ background-size: cover;
 @media only screen and (max-width: 767px) {
   .background__rod-1 {
     background-image: url("../img/background-withrod-phone.png");
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -760,6 +768,8 @@ background-size: cover;
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .background__rod-1 {
     background-image: url("../img/background-withrod-tablet.png");
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -767,6 +777,8 @@ background-size: cover;
 @media only screen and (min-width: 1024px) and (max-width: 2223px) {
   .background__rod-1 {
     background-image: url("../img/background-withrod-desk.png");
+    width: 100%;
+    height: auto;
     
   }
 }
@@ -778,8 +790,8 @@ background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   background-size: cover;
-    width: 100%;
-    height: 50rem;
+  width: 100%;
+  height: auto;
   }
 }
 
@@ -1705,12 +1717,113 @@ color: black;
 
  .background__text { 
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 1rem;
+  padding: 3rem;
   display: inline-block;
+  height: 32rem;
+max-width: 70%;
+}
 
-  height: 45rem;
-  margin-top: -2rem;
-max-width: 60%;
+
+@media screen  and (min-width: 1282px) {
+
+  .home__instituto{
+    left:11rem
+  }
+
+  .home__name__rod{
+
+    left: 36rem;
+ 
+ }
+} 
+
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+  .home__instituto{
+
+    left:11rem
+  }
+
+  .home__name__rod{
+    right: 3rem;
+ 
+ }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .home__instituto{
+    font-size: 4rem;
+    left: 5rem;
+  }
+  .home__name{
+    margin: auto;
+    font-size: 6rem
+    }
+
+.home__name__rod{
+      margin: auto;
+      font-size: 3rem;
+      right: 2rem;
+   }
+     
+
+}
+
+@media screen and (min-width: 540px) and (max-width:767px) {
+
+  .background__text {
+    max-width:90% ;
+    max-height:30% ;
+    margin-top: 2rem;
+  }
+
+
+  .home__instituto{
+    top:1rem;
+   left:9rem;
+font-size: 2rem;
+  }
+  .home__name{
+    top:4rem;
+    font-size: 3rem;
+ 
+    }
+.home__name__rod{
+  font-size: 1.5rem;
+  top:6rem;
+  left:19rem;
+   }
+
+}
+
+@media screen and (max-width: 539px){
+
+  .background__text {
+    max-width:90% ;
+    max-height:30% ;
+    margin-top: 2rem;
+  }
+
+
+  .home__instituto{
+    top:1rem;
+   left:6rem;
+font-size: 2rem;
+  }
+  .home__name{
+    top:4rem;
+    font-size: 3rem;
+    right: 1rem;
+    }
+.home__name__rod{
+  font-size: 1.5rem;
+  top:6rem;
+  left:16rem;
+   }
+     
+
 }
 
 
