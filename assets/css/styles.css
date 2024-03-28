@@ -685,9 +685,14 @@ body.dark-theme {
   bottom: 1.5rem;
 }
 
-.about__info {
-  padding-left: 1.25rem;
+
+  .about__info {
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
 }
+
 
 .about__description {
   position: relative;
@@ -1268,6 +1273,8 @@ background-size: cover;
   }
 
 
+
+
 }
 
 
@@ -1628,8 +1635,7 @@ background-size: cover;
 
 
 
-
-/* whatsapp */
+/*=============== WHATSAPP ===============*/
 .btn-wsp{
   position:fixed;
   width:60px;
@@ -1669,9 +1675,9 @@ background-size: cover;
 
 
 
- /* prueba boton nuevo  */
+/*=============== BOTON TRATAMIENTO ===============*/
  .button__tratamientos{
-  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+  cursor: pointer;
   color: #090909;
   padding: 0.7em 1.7em;
   font-size: 18px;
@@ -1695,7 +1701,7 @@ color: black;
  }
 
  
- /* background letras */
+/*=============== BACKGOUND LETRAS INICIO===============*/
 
  .background__text { 
   background-color: rgba(255, 255, 255, 0.5);
@@ -1707,16 +1713,14 @@ color: black;
 max-width: 60%;
 }
 
-/* mas informacion home */
-/* Estilo para ocultar el contenido */
+
+/*=============== BOTON LEER MAS ===============*/
 .hidden {
   display: none;
 }
-
-/* Estilo para el botón de "Leer más" */
 .read-more-btn {
-  /* Estilos de tu botón (colores, padding, etc.) */
-  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+ 
+  cursor: pointer;
     color: #090909;
     padding: 0.7em 1.7em;
     font-size: 18px;
@@ -1726,10 +1730,11 @@ max-width: 60%;
     border: 1px solid #e8e8e8;
     transition: all 0.3s;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-    margin-left: 20rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 
   }
+
   
   .read-more-bt:active {
     color: #666;
@@ -1742,7 +1747,6 @@ max-width: 60%;
 color: black;
 }
 
-/* Puedes utilizar un ícono de 'X' o simplemente cambiar el texto */
 .read-more-btn.open::after {
 
   display: block;
