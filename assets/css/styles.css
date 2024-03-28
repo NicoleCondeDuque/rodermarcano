@@ -1739,6 +1739,12 @@ max-width: 70%;
 
 
 @media screen and (min-width: 1025px) and (max-width: 1281px) {
+
+
+  .background__text {
+    max-width:60% ;
+ 
+  }
   .home__instituto{
 
     left:11rem
@@ -1753,6 +1759,12 @@ max-width: 70%;
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .background__text {
+    max-width:60% ;
+ 
+  }
+
   .home__instituto{
     font-size: 4rem;
     left: 5rem;
@@ -1849,7 +1861,7 @@ font-size: 2rem;
 .home__name__rod{
   font-size: 1.5rem;
   top:6rem;
-  left:14rem;
+  left:13rem;
    }
      
 
