@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-/*=============== carrusel ===============*/
+/*=============== carrusel  testimonios ===============*/
 
 document.addEventListener('DOMContentLoaded', function() {
   const btnPrev = document.querySelector('.prev');
@@ -213,5 +213,37 @@ document.addEventListener('DOMContentLoaded', function() {
   
   btnNext.addEventListener('click', function() {
     scrollCarousel(1);
+  });
+});
+
+
+/*=============== carrusel marcas ===============*/
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Función genérica de desplazamiento
+  function scrollCarousel(carouselSelector, offset) {
+    const carousel = document.querySelector(carouselSelector);
+    const cards = carousel.querySelectorAll('.projects__card, .brands__card'); // Ajusta según tus clases
+    const cardStyle = window.getComputedStyle(cards[0]);
+    const cardMarginRight = parseInt(cardStyle.marginRight, 10);
+    const cardWidth = cards[0].offsetWidth + cardMarginRight;
+    
+    carousel.scrollBy(cardWidth * offset, 0);
+  }
+
+  // Eventos para el primer carrusel
+  document.querySelector('.button__tratamientos.prev').addEventListener('click', function() {
+    scrollCarousel('.projects__container', -1);
+  });
+  document.querySelector('.button__tratamientos.next').addEventListener('click', function() {
+    scrollCarousel('.projects__container', 1);
+  });
+
+  // Eventos para el segundo carrusel
+  document.querySelector('.brands-prev').addEventListener('click', function() {
+    scrollCarousel('.brands__container', -1);
+  });
+  document.querySelector('.brands-next').addEventListener('click', function() {
+    scrollCarousel('.brands__container', 1);
   });
 });

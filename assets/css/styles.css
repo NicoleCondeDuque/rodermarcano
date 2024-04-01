@@ -419,6 +419,9 @@ body.dark-theme {
   padding-top: 2rem;
 }
 
+
+
+
 .home__name {
   font-size: 7rem;
     text-align: center;
@@ -455,19 +458,6 @@ color: #090909;
 
 }
 
-.home__perfil {
-  position: relative;
-  justify-self: center;
-}
-
-.home__image {
-  width: 220px;
-}
-
-.home__img {
-  position: relative;
-  z-index: 10;
-}
 
 .home__shadow {
   width: 100%;
@@ -1721,7 +1711,7 @@ font-weight: bold;
   display: inline-block;
   height: 36rem;
 max-width: 65%;
-margin: -2rem;
+
 }
 
 
@@ -1931,8 +1921,19 @@ color: black;
   margin-left: 1rem;
     margin-right: 1rem;
     font-weight: bold;
+    z-index: 2;
 }
 
+
+
+.brands-prev{
+  left: 0;
+}
+
+
+.brands-next{
+  right: 0;
+}
 .prev {
   left: 0;
 }
