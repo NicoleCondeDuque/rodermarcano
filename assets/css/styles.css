@@ -1984,15 +1984,15 @@ overflow: hidden;
 
 .projects__image {
   width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: auto; 
   display: block;
 }
 
 
 @media (max-width: 480px) {
   .carousel-control {
-    font-size: 18px; /* Reduce el tamaño de la fuente */
-    padding: 0.1em 0.3em; /* Reduce el relleno */
+    font-size: 18px; 
+    padding: 0.1em 0.3em; 
   }
 }
 
