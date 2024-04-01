@@ -433,6 +433,16 @@ body.dark-theme {
     
 }
 
+.home__name-section {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Gloock", serif;
+  margin: 0rem 1rem 0.1rem 1rem;
+  position: absolute;
+  top: 33rem;
+
+}
+
 .home__name__rod{
   text-align: end;
   font-family: "Damion", cursive;

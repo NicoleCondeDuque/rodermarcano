@@ -144,6 +144,7 @@ const sr = ScrollReveal({
   distance: "60px",
   duration: 2500,
   delay: 400,
+  // reset: true // Animations repeat
 });
 
 sr.reveal(`.home__perfil, .about__image, .contact__mail`, { origin: "right" });
