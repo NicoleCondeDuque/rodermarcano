@@ -435,6 +435,7 @@ body.dark-theme {
   font-size: 3rem;
   position: absolute;
     top: 20rem;
+    font-weight: 100
  
 
 }
@@ -447,6 +448,7 @@ body.dark-theme {
   position: absolute;
   top: 9rem;
   left: -4rem;
+  font-weight: 100;
 
 
 }
@@ -749,7 +751,7 @@ body.dark-theme {
   background-attachment: fixed;
 background-size: cover;
   width: 100%;
-  height: au;
+  height: auto;
   
  
 }
@@ -1249,8 +1251,7 @@ background-size: cover;
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .home__container,
-  .about__container,
-  .projects__container {
+  .about__container{
     grid-template-columns: 350px;
     justify-content: center;
   }
@@ -1710,6 +1711,7 @@ background-size: cover;
 
  .button__tratamientos-inter{
 color: black;
+font-weight: bold;
  }
 
  
@@ -1742,7 +1744,7 @@ max-width: 70%;
 
 
   .background__text {
-    max-width:60% ;
+    max-width:70% ;
  
   }
   .home__instituto{
@@ -1761,7 +1763,7 @@ max-width: 70%;
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
   .background__text {
-    max-width:60% ;
+    max-width:75% ;
  
   }
 
@@ -1908,25 +1910,28 @@ color: black;
 }
 
 /*=============== prueba carrusel ===============*/
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
 
 .carousel-container {
   position: relative;
 }
 
+
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff;
-  border: 2px solid #000;
-  padding: 5px 10px;
+  color: #090909;
+  padding: 0.1em 0.5em;
+  font-size: 25px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
   cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.4s;
+  box-shadow: 2px 2px 12px #c5c5c5, -2px -2px 12px #ffffff;
+  margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
 }
 
 .prev {
@@ -1937,43 +1942,35 @@ color: black;
   right: 0;
 }
 
-
-
-.projects__card {
-  flex: 0 0 auto;
-  width: 90%; /* Ajusta al tamaño deseado */
-  margin-right: 20px;
-}
-
-/* Estilos para ocultar barras de desplazamiento pero permitir el desplazamiento */
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.carousel {
-  -ms-overflow-style: none;  /* IE and Edge */
+.carousel, .carousel::-webkit-scrollbar {
+  -ms-overflow-style: none; 
   scrollbar-width: none;  /* Firefox */
-}
-
-.carousel {
-  display: flex;
   overflow-x: auto;
+  display: flex;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos básicos para las tarjetas dentro del carrusel */
 .projects__card {
   flex: 0 0 auto;
   width: 90%; /* Ajusta al tamaño deseado */
   margin-right: 20px;
 }
 
-.carousel::-webkit-scrollbar {
-  display: none;
+/* Ajustes responsivos para las tarjetas basados en el tamaño de pantalla */
+@media (min-width: 768px) {
+  .projects__card {
+    width: calc(50% - 20px); /* Ajuste para mostrar 2 tarjetas en tabletas */
+  }
 }
 
-.carousel {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+@media (min-width: 1024px) {
+  .projects__card {
+    width: calc(33.333% - 20px); /* Ajuste para mostrar 3 tarjetas en escritorios */
+  }
 }
-
