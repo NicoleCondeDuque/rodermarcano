@@ -1961,6 +1961,14 @@ color: black;
   margin-right: 20px;
 }
 
+@media (max-width: 480px) {
+  .carousel-control {
+    font-size: 18px; /* Reduce el tamaño de la fuente */
+    padding: 0.1em 0.3em; /* Reduce el relleno */
+  }
+}
+
+
 
 @media (min-width: 768px) {
   .projects__card {
