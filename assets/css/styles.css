@@ -12,7 +12,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: #062931;
+  --first-color: #845C13;
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
@@ -132,7 +132,7 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: #062931;
+  --first-color:#845C13;
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -426,6 +426,7 @@ body.dark-theme {
     margin: -1rem 5rem -1rem 5rem;
     position: absolute;    
     top:13rem;
+    color: #090909;
     
 }
 
@@ -435,14 +436,15 @@ body.dark-theme {
   font-size: 3rem;
   position: absolute;
     top: 20rem;
-    font-weight: 100
+    font-weight: 100;
+    color: #090909;
  
 
 }
 
 .home__instituto{
   text-align: start;
-  color: #000000;
+color: #090909;
   font-family: "Unna", serif;
   font-size: 4rem;
   position: absolute;
@@ -990,7 +992,7 @@ background-size: cover;
 }
 
 .contact__title {
-  color: var(--white-color);
+  color: #845C13;
   font-size: var(--h2-font-size);
   margin-bottom: 2rem;
   text-align: center;
@@ -1721,8 +1723,9 @@ font-weight: bold;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 3rem;
   display: inline-block;
-  height: 32rem;
-max-width: 70%;
+  height: 36rem;
+max-width: 65%;
+margin: -2rem;
 }
 
 
@@ -1920,11 +1923,11 @@ color: black;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: #090909;
+  color: #e8e8e8;;
   padding: 0.1em 0.5em;
   font-size: 25px;
   border-radius: 0.5em;
-  background: #e8e8e8;
+  background: #845C13;
   cursor: pointer;
   border: 1px solid #e8e8e8;
   transition: all 0.4s;
@@ -1965,11 +1968,18 @@ color: black;
 @media (min-width: 768px) {
   .projects__card {
     width: calc(50% - 20px); 
-  }
+  }`
 }
 
 @media (min-width: 1024px) {
   .projects__card {
     width: calc(33.333% - 20px);
+  }
+}
+
+@media (min-width: 1843px) {
+  .carousel-control {
+    margin-left: 24rem;
+    margin-right: 23rem;
   }
 }
