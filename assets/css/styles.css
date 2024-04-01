@@ -732,10 +732,10 @@ color: #090909;
   
 }
 .background__rod{
-
+  background-image: url("../img/background-withrod.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+  background-size: cover;
 }
 
 .background__rod-1{
