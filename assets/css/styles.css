@@ -1974,12 +1974,17 @@ color: black;
 }
 
 
-.projects__image-container-brand{
+.projects__image-container-brand {
   flex-shrink: 0;
-width: 280px;
-height: 280px;
-border-radius: 50%;
-overflow: hidden;
+  width: 40rem; 
+  height: 210px; 
+  overflow: hidden; 
+}
+
+.projects__image-container-brand .projects__image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
 }
 
 .projects__image {

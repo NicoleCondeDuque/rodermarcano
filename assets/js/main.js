@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function scrollCarousel(carouselSelector, offset) {
     const carousel = document.querySelector(carouselSelector);
-    const cards = carousel.querySelectorAll('.projects__card, .brands__card'); // Ajusta según tus clases
+    const cards = carousel.querySelectorAll('.projects__brand'); //
     const cardStyle = window.getComputedStyle(cards[0]);
     const cardMarginRight = parseInt(cardStyle.marginRight, 10);
     const cardWidth = cards[0].offsetWidth + cardMarginRight;
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
     carousel.scrollBy(cardWidth * offset, 0);
   }
 
-  // Eventos para el primer carrusel
+
   document.querySelector('.button__tratamientos.prev').addEventListener('click', function() {
     scrollCarousel('.projects__container', -1);
   });
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollCarousel('.projects__container', 1);
   });
 
-  // Eventos para el segundo carrusel
+
   document.querySelector('.brands-prev').addEventListener('click', function() {
     scrollCarousel('.brands__container', -1);
   });
