@@ -732,16 +732,15 @@ color: #090909;
   
 }
 .background__rod{
-  background-image: url("../img/background-withrod.png");
+
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; 
+
 }
 
 .background__rod-1{
   background-repeat: no-repeat;
   background-attachment: fixed;
-background-size: cover;
   width: 100%;
   height: auto;
   
@@ -753,6 +752,7 @@ background-size: cover;
     background-image: url("../img/background-withrod-phone.png");
     width: 100%;
     height: auto;
+    background-size: contain;
   }
 }
 
@@ -779,7 +779,7 @@ background-size: cover;
     background-image: url("../img/background-withrod.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   height: auto;
   }
@@ -1709,8 +1709,10 @@ font-weight: bold;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 3rem;
   display: inline-block;
-  height: 36rem;
-max-width: 65%;
+  height: 29rem;
+  max-width: 65%;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
 
 }
 
