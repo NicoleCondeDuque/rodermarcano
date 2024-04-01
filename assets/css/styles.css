@@ -1961,7 +1961,33 @@ color: black;
   flex: 0 0 auto;
   width: 90%; 
   margin-right: 20px;
+} 
+
+
+
+.projects__image-container {
+  flex-shrink: 0; 
+  width: 80px;
+  height: 80px; 
+  border-radius: 50%; 
+  overflow: hidden; 
 }
+
+
+.projects__image-container-brand{
+  flex-shrink: 0;
+width: 280px;
+height: 280px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.projects__image {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block;
+}
+
 
 @media (max-width: 480px) {
   .carousel-control {
