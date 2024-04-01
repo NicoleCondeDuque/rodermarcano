@@ -742,7 +742,7 @@ color: #090909;
   
 }
 .background__rod{
-  background-image: url("../img/background-rod1.png");
+  background-image: url("../img/background-withrod.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; 
@@ -758,8 +758,6 @@ background-size: cover;
  
 }
 
-
-/* Mobile Phones */
 @media only screen and (max-width: 767px) {
   .background__rod-1 {
     background-image: url("../img/background-withrod-phone.png");
@@ -768,7 +766,6 @@ background-size: cover;
   }
 }
 
-/* Tablets in Portrait */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .background__rod-1 {
     background-image: url("../img/background-withrod-tablet.png");
@@ -777,12 +774,11 @@ background-size: cover;
   }
 }
 
-/* Tablets in Landscape */
 @media only screen and (min-width: 1024px) and (max-width: 2223px) {
   .background__rod-1 {
-    background-image: url("../img/background-withrod-desk.png");
+    background-image: url("../img/background-withrod.png");
     width: 100%;
-    height: auto;
+   
     
   }
 }
@@ -863,7 +859,7 @@ background-size: cover;
 }
 
 .projects__card {
-  padding: 1rem 1rem 2rem;
+  padding: 1rem 4rem 2rem;
   transition: background-color 0.4s;
 }
 
@@ -1968,7 +1964,7 @@ color: black;
 @media (min-width: 768px) {
   .projects__card {
     width: calc(50% - 20px); 
-  }`
+  }
 }
 
 @media (min-width: 1024px) {
