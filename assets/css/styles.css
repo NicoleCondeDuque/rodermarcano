@@ -1932,9 +1932,9 @@ color: black;
   transition: all 0.4s;
   box-shadow: 2px 2px 12px #c5c5c5, -2px -2px 12px #ffffff;
   margin-left: 1rem;
-    margin-right: 1rem;
-    font-weight: bold;
-    z-index: 2;
+  margin-right: 1rem;
+  font-weight: bold;
+  z-index: 1;
 }
 
 
@@ -1947,6 +1947,7 @@ color: black;
 .brands-next{
   right: 0;
 }
+
 .prev {
   left: 0;
 }
