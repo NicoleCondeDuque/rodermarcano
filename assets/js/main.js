@@ -147,14 +147,14 @@ const sr = ScrollReveal({
   // reset: true // Animations repeat
 });
 
-sr.reveal(`.home__perfil, .about__image, .contact__mail`, { origin: "right" });
+sr.reveal(`.home__perfil,  .contact__mail`, { origin: "right" });
 sr.reveal(
   `.background__text, .home__instituto, .home__name, .home__name__rod, .home__info, 
             .about__container .section__title-1, .about__info, 
             .contact__social, .contact__data`,
   { origin: "left" }
 );
-sr.reveal(`.services__card, .projects__card`, { interval: 100 });
+sr.reveal(`.services__card`, { interval: 100 });
 
 /*=============== MAS INFO ===============*/
 
@@ -175,9 +175,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   });
 });
-
-
-
 
 /*=============== carrusel  testimonios ===============*/
 

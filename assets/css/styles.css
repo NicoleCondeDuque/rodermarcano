@@ -762,7 +762,7 @@ color: #090909;
     background-image: url("../img/background-withrod-phone.png");
     width: 100%;
     height: auto;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -903,6 +903,7 @@ color: #090909;
   font-size: var(--h3-font-size);
   margin-bottom: 0.75rem;
 }
+
 
 .projects__buttons {
   display: flex;
@@ -1985,23 +1986,26 @@ color: black;
 
 
 .projects__image-container-brand {
-  flex-shrink: 0;
-  width: 40rem; 
-  height: 210px; 
-  overflow: hidden; 
+  width: 100%;
+  height: 150px; /* Establecer la altura deseada */
+  overflow: hidden;
 }
 
 .projects__image-container-brand .projects__image {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.projects__image {
-  width: 100%;
-  height: auto; 
-  display: block;
+
+
+.projects__image-container-brand{
+  border-radius: 15px;
+  width: 320px;
+  height: 150px;
+  background-color: #fff;
 }
+
 
 
 @media (max-width: 480px) {
