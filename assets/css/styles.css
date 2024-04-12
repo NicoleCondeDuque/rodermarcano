@@ -206,10 +206,17 @@ body.dark-theme {
   padding-block: 4rem 2rem;
 }
 
-.section__title-1,
+
 .section__title-2 {
   position: relative;
   font-size: 3rem;
+  width: max-content;
+  margin: 0.1rem auto 1rem;
+}
+
+.section__title-1  {
+  position: relative;
+  font-size: 2rem;
   width: max-content;
   margin: 0.1rem auto 1rem;
 }
@@ -656,6 +663,9 @@ color: #090909;
   position: relative;
   border: 4px solid var(--white-color);
   z-index: 1;
+  width: 200px;  /* Ancho fijo para todas las imágenes */
+  height: 300px; /* Altura fija para todas las imágenes */
+  object-fit: cover;
 }
 
 .about__shadow,
