@@ -1173,6 +1173,7 @@ color: #090909;
 .footer__link {
   color: var(--white-color);
   transition: color 0.4s;
+  font-size: 0.9rem;
 }
 
 .footer__link:hover {
