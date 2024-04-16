@@ -39,35 +39,65 @@ const shadowHeader = () => {
 };
 window.addEventListener("scroll", shadowHeader);
 
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Función para abrir el modal
+  const modalButtons = document.querySelectorAll('.modal-button');
+  modalButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          const modalId = button.dataset.modal;
+          document.getElementById(modalId).style.display = 'block';
+      });
+  });
+
+  // Función para cerrar el modal
+  const closeButtons = document.querySelectorAll('.close');
+  closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          button.closest('.modal').style.display = 'none';
+      });
+  });
+
+  // Cerrar el modal al hacer clic fuera de él
+  // window.addEventListener('click', (event) => {
+  //     if (event.target.className.includes('modal')) {
+  //         event.target.style.display = 'none';
+  //     }
+  // });
+});
+
+
 /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById("contact-form"),
-  contactMessage = document.getElementById("contact-message");
+// const contactForm = document.getElementById("contact-form"),
+//   contactMessage = document.getElementById("contact-message");
 
-const sendEmail = (e) => {
-  e.preventDefault();
+// const sendEmail = (e) => {
+//   e.preventDefault();
 
-  // serviceID - templateID - #form - publicKey
-  emailjs.sendForm("", "", "#contact-form", "").then(
-    () => {
-      // Show sent message
-      contactMessage.textContent = "Message sent successfully ✅";
+//   // serviceID - templateID - #form - publicKey
+//   emailjs.sendForm("", "", "#contact-form", "").then(
+//     () => {
+//       // Show sent message
+//       contactMessage.textContent = "Message sent successfully ✅";
 
-      // Remove message after five seconds
-      setTimeout(() => {
-        contactMessage.textContent = "";
-      }, 5000);
+//       // Remove message after five seconds
+//       setTimeout(() => {
+//         contactMessage.textContent = "";
+//       }, 5000);
 
-      // Clear input fields
-      contactForm.reset();
-    },
-    () => {
-      // Show error message
-      contactMessage.textContent = "Message not sent (service error) ❌";
-    }
-  );
-};
+//       // Clear input fields
+//       contactForm.reset();
+//     },
+//     () => {
+//       // Show error message
+//       contactMessage.textContent = "Message not sent (service error) ❌";
+//     }
+//   );
+// };
 
-contactForm.addEventListener("submit", sendEmail);
+// contactForm.addEventListener("submit", sendEmail);
 
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
@@ -244,3 +274,9 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollCarousel('.brands__container', 1);
   });
 });
+
+
+
+
+
+
