@@ -1950,8 +1950,8 @@ color: black;
   border: 1px solid #e8e8e8;
   transition: all 0.4s;
   box-shadow: 2px 2px 12px #c5c5c5, -2px -2px 12px #ffffff;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   font-weight: bold;
  
 }
