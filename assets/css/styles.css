@@ -768,6 +768,12 @@ color: #090909;
  
 }
 
+@supports( -webkit-touch-callout: none){
+  .background__rod-1{
+    background-attachment:scroll;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .background__rod-1 {
     background-image: url("../img/background-withrod-phone.png");
