@@ -715,7 +715,7 @@ color: #090909;
     padding-left: 1.25rem;
     display: flex;
     flex-direction: column;
-    max-width: 70%;
+    /* max-width: 70%; */
 }
 
 
