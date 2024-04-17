@@ -1,205 +1,761 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== REMIXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
-      crossorigin=""
-    />
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/logo-name.jpeg" type="image/x-icon" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="" />
 
-    <title>Tratamientos Faciales</title>
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="./index.html#home" class="nav__logo">
-          <span class="nav__logo-circle">R</span>
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-          <span class="nav__logo-name"> Dr. Rodder Marcano.</span>
-        </a>
+  <title>Tratamentos Faciais</title>
+</head>
 
-        <div class="nav__menu" id="nav-menu">
-          <span class="nav__title">Menu</span>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="./index.html#home" class="nav__logo">
+        <span class="nav__logo-circle">IS</span>
 
-          <h3 class="nav__name">Dr.Rodder</h3>
+        <span class="nav__logo-name">IntegraSkin</span>
+      </a>
 
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./index.html#home" class="nav__link active-link">Atrás</a>
-            </li>
-            <li class="nav__item">
-              <a href="./index.html#contact" class="nav__link nav__link-button"
-                >Contactame</a
-              >
-            </li>
-          </ul>
+      <div class="nav__menu" id="nav-menu">
+        <span class="nav__title">Menu</span>
 
-          <!-- Close button -->
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
+        <h3 class="nav__name">Dr.Rodder</h3>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html#home" class="nav__link active-link">Atrás</a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html#contact" class="nav__link nav__link-button">Contactame</a>
+          </li>
+        </ul>
+
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__buttons">
+        <!-- Theme button -->
+
+
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <h1 class="home__name-section "> Tratamentos Faciais</h1>
+
+        <div class="home__perfil">
+          <div class="home__image">
+            <img src="assets/img/tratamientosFaciales.jpeg" alt="image" class="home__img" />
+            <div></div>
           </div>
+
         </div>
 
-        <div class="nav__buttons">
-          <!-- Theme button -->
-          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="home__info">
 
-          <!-- Toggle button -->
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-4-line"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <h1 class="home__name">Tratamientos Faciales</h1>
-
-          <div class="home__perfil">
-            <div class="home__image">
-              <img
-                src="assets/img/tratamientosFaciales.jpeg"
-                alt="image"
-                class="home__img"
-              />
-              <div class="home__shadow"></div>
+          <a href="#about" class="home__scroll">
+            <div class="home__scroll-box">
+              <i class="ri-arrow-down-s-line"></i>
             </div>
 
-            <!--<div class="home__social">
-              <a
-                href="https://www.facebook.com/"
-                class="contact__social-link"
-                target="_blank"
-              >
-                <i class="ri-facebook-circle-line"></i>
-              </a>
-
-              <a
-                href="https://www.instagram.com/"
-                class="contact__social-link"
-                target="_blank"
-              >
-                <i class="ri-instagram-line"></i>
-              </a>
-
-              <a
-                href="https://www.linkedin.com/"
-                class="contact__social-link"
-                target="_blank"
-              >
-                <i class="ri-linkedin-box-line"></i>
-              </a>
-            </div>-->
-          </div>
-
-          <div class="home__info">
-            <!--<p class="home__description">
-              <b>Especialista en medicina estética y dermatología</b>,
-              comprometido con la excelencia, la experiencia en el cuidado de la
-              piel y la comprensión de los procesos evolutivos del ser humano me
-              permiten ofrecer cuidados clínicos y estéticos de alta calidad.
-            </p>-->
-
-            <a href="#about" class="home__scroll">
-              <div class="home__scroll-box">
-                <i class="ri-arrow-down-s-line"></i>
-              </div>
-
-              <span class="home__scroll-text"></span>
-            </a>
-          </div>
+            <span class="home__scroll-text"></span>
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--==================== ABOUT ====================-->
-      <!-- <section class="about section" id="about">
-        <div class="about__container container grid">
-          <h2 class="section__title-1">
-            <span>Sobre mi</span>
-          </h2>
+    <!--==================== ABOUT ====================-->
 
-          <div class="about__perfil">
-            <div class="about__image">
-              <img
-                src="assets/img/about-perfil.jpg"
-                alt="image"
-                class="about__img"
-              />
-
-              <div class="about__shadow"></div>
-
-              <div class="about__box"></div>
-            </div>
-          </div>
-
-          <div class="about__info">
-            <p class="about__description">
-            </p>
+<!-- Sección HydraFacial -->
+<section class="about section" id="about">
+<div class="about__container container grid">
+      <h2 class="section__title-1"><span>HYDRAFACIAL</span></h2>  
+       <div class="about__image">
+          <img src="assets/img/hydrafacial.jpeg" alt="image" class="about__img-section" />
+     
+        </div>
+      <div class="about__perfil">
+      
         
-
+    <div class="about__info">
+            <p class="about__description">
+             <b> HydraFacial™ </b> é o tratamento dos famosos, o preferido dos americanos por entregar resultados de luxo, ele usa
+              tecnologia própria para limpar, extrair e hidratar.
+  
+              Seus ingredientes nutritivos criam um brilho instantâneo e gratificante em apenas 3 etapas:
+            </p>
+      
+  
             <ul class="about__list">
               <li class="about__item">
-                <b>Mis especialidades:</b> Dermatologia y Estetica.
+                <b>1. LIMPEZA + PEELING</b>(Descubra uma nova camada de sua pele com uma esfoliação suave e um rejuvenescimento relaxante).
+              </li>
+              <li class="about__item">
+                <b>2. EXTRAÇAO + HIDRATAÇAO</b> (Remove resíduos dentro dos poros com sucção indolor. Nutre com hidratantes intensos que refrescam a pele).
+              </li>
+              <li class="about__item">
+                <b>3. FUSAO + PROTEÇAO</b>  (Satura a superfície da pele com antioxidantes e peptídeos para maximizar seu brilho).
               </li>
             </ul>
-            <div class="about__buttons">
-              <a href="#contact" class="button">
-                <i class="ri-send-plane-line"></i> Contactame
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                class="contact__social-link"
-                target="_blank"
-              >
-                <i class="ri-instagram-line"></i>
-              </a>
-            </div>
+
+      </div> 
+        
+      </div>
+     
+      <div class="modal" id="hydrafacialModal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="about__info">
+              
+                <p class="about__description">
+                  O design em espiral das pontas HydroPeel®, usado em conjunto com a Tecnologia de Vácuo e soros da HydraFacial, cria um efeito de vórtice para expelir e remover facilmente as impurezas enquanto fornece soluções hidratantes para a pele.
+                  HydraFacial cuida de todas as necessidades e de todos os tipos de pele:</p>
+      
+                  <ul class="about__list">
+                    <li class="about__item">
+                      <b>ELASTICIDADE + FIRMEZA</b>
+                    </li>
+                    <li class="about__item">
+                      <b>LINHAS FINAS + RUGAS</b>
+                    </li>
+                    <li class="about__item">
+                      <b>TEXTURA DA PELE</b>  
+                    </li>
+                    <li class="about__item">
+                      <b>TOM UNIFORME + VITALIDADE</b>  
+                    </li>
+                    <li class="about__item">
+                      <b>MANCHAS NA PELE</b>  
+                    </li>
+                    <li class="about__item">
+                      <b>PELE OLEOSA + CONGESTIONADA</b>  
+                    </li>
+                    <li class="about__item">
+                      <b>MANCHAS NA PELE</b>  
+                    </li>
+                  </ul>           
+              </div> 
+          </div>
+      </div>
+ <button class="modal-button" data-modal="hydrafacialModal">Ler mais</button>  
+</div>  
+</section>
+
+<!-- Sección Microneedling-->    
+<section class="about section" id="about">
+    <div class="about__container container grid">
+        <div class="about__info">
+          <h2 class="section__title-1">
+            <span>MICRONEEDLING</span>
+          </h2>
+          <p class="about__description">
+            <b>Microneedling </b> O microagulhamento, também chamado de terapia de indução de colágeno, é um procedimento que estimula a capacidade de regeneração da pele por meio de múltiplas micropunções, desencadeando a geração natural de colágeno e elastina, ao mesmo tempo que permite uma penetração mais profunda dos princípios ativos cosméticos aplicados.
+             </br>
+          
+             O microagulhamento rejuvenesce a pele por dentro e melhora diversas condições faciais:
+
+          </p>
+
+          <div class="modal" id="microneedlingModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="about__info">
+          <ul class="about__list">
+            <li class="about__item">
+              <b>Ajuda a reduzir </b> os danos à pele causados pelo sol.
+            </li>
+            <li class="about__item">
+              <b>Revitaliza </b> e reativa componentes dérmicos.
+            </li>
+            <li class="about__item">
+              <b>Reduz os poros.</b>
+            </li>
+            <li class="about__item">
+              <b>Suaviza</b>  a aparência da pele.
+            </li>
+            <li class="about__item">
+              <b>Redensifica a pele,</b>  melhorando rugas finas e cicatrizes.
+            </li>
+            <li class="about__item">
+              <b>Promove </b> a regeneração dos fibroblastos, melhorando a firmeza e elasticidade da pele.
+            </li>
+            <li class="about__item">
+              <b>Ajuda </b> a difundir antioxidantes para combater os radicais livres: porém ajuda a clarear a pele.
+            </li>
+            <li class="about__item">
+              <b>Indução de princípios</b>  ativos de acordo com o tratamento.
+            </li>
+            <li class="about__item">
+              <b>Podem ser realizados vários tratamentos: </b> BB GLOW, HydraLips, PRP facial e capilar.
+            </li>
+          </ul>
           </div>
         </div>
-      </section> -->
+      </div>
+    </div>
+
+        <div class="about__perfil-2">
+          <div class="about__image">
+            <img src="assets/img/microneedling.jpeg" alt="image" class="about__img-section" height="400px" width="700px"
+              loading="lazy" />
+
+
+
+            <div class="about__box"></div>
+            
+          </div>
+
+        </div>
+        <button class="modal-button" data-modal="microneedlingModal">Ler mais</button>
+</section>
+
+<!-- Sección Plasmajet-->  
+<section class="about section" id="about">
+      <div class="about__container container grid">
+        <h2 class="section__title-1"><span>PLASMAJET</span></h2>
+           <div class="about__image">
+            <img src="assets/img/plasmajet.jpeg" alt="image" class="about__img-section" alt="image" loading="lazy" />
+           
+      </div>
+
+<div class="about__perfil"> 
+   <div class="about__info">
+          <p class="about__description">
+            <b>Plasmajet</b> o jato de plasma ou fibroblast consiste na ativação de um processo de ionização que gera microlesões controladas na pele, e que resulta na retração e produção de colágeno. E isso é ideal para reduzir: Rugas, flacidez, estrias, aumentam a elasticidade e melhoram a aparência da pele (poros, irregularidades) em sua função mais poderosa. Após uma avaliação dermatoscópica também é utilizado para remoção de lesões cutâneas, angiomas, queratoses e verrugas.
+            <br>
+            Este equipamento possui corrente contínua que é produzida por um gerador. À medida que se aproxima da pele, a corrente quebra o isolamento dielétrico do ar e produz uma descarga elétrica de alta tensão controlada, também conhecida como descarga de plasma.
+            <br>
+            Dos seus principais usos, são no tratamento/ remoção de: 
+            
+          </p> 
+    </div>
+  </div>
+
+        <div class="modal" id="plasmajetModal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+        <div class="about__info">
+          <ul class="about__list">
+            <li class="about__item">
+              <b>Queratoses actínicas</b>
+            </li>
+            <li class="about__item">
+              <b>Verrugas</b>
+            </li>
+            <li class="about__item">
+              <b>Siringomas</b>
+            </li>
+            <li class="about__item">
+              <b>Acrocórdons</b>
+            </li>
+            <li class="about__item">
+              <b>Nevos</b>
+            </li>
+            <li class="about__item">
+              <b>Blefaroplastia não cirúrgica</b>
+            </li>
+          </ul>
+          <p class="about__description">
+            <b> PLASMAJET</b> é ideal para todos os tipos de pele*
+          </p>
+        </div>
+        </div>
+      </div>
+      <button class="modal-button" data-modal="plasmajetModal">Ler mais</button>  
+    </div>
+</section>
+
+<!-- Sección Ultraformer--> 
+<section class="about section" id="about">
+  <div class="about__container container grid">
+      <div class="about__info">
+        <h2 class="section__title-1">
+          <span>ULTRAFORMER</span>
+        </h2>
+        <p class="about__description">
+          <b>Ultraformer</b> este procedimento consegue a renovação dos tecidos faciais afetados pela idade. O Ultraformer é um ultrassom micro e macrofocado nos tecidos que produz uma contração e faz com que a pele fique esticada e levantada com um efeito lifting.	
+          Causa uma elevação na temperatura da derme em diferentes profundidades, até 65-75 graus Celsius. Isto dará um resultado lifting imediato, porém encontraremos o verdadeiro resultado 3 meses depois, pois internamente a pele muda, se renova, formando mais colágeno e elastina e assim dando juventude ao nosso rosto. O procedimento dura aproximadamente uma hora e o efeito dura em média até 8 meses. Podemos combiná-lo com outros estimuladores de colágeno como a hidroxiapatita de cálcio.       
+<br>
+Dos seus principais usos:
+
+        </p>
+
+        <div class="modal" id="ultraformerModal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="about__info">
+                <ul class="about__list">
+                  <li class="about__item">
+                    <b>Melhora </b> a elasticidade e firmeza da pele.
+                  </li>
+                  <li class="about__item">
+                    <b>Promove</b> a produção de colágeno.
+                  </li>
+                  <li class="about__item">
+                    <b>Reduz rugas</b> do rosto e da pele.
+                  </li>
+                  <li class="about__item">
+                    <b>Devolve</b> luminosidade ao rosto
+                  </li>
+                  <li class="about__item">
+                    <b>Ajuda a reduzir</b> bolsas nos olhos.
+                  </li>
+                  <li class="about__item">
+                    <b>Ajuda</b> a definir os contornos faciais.
+                  </li>
+                  <li class="about__item">
+                    <b>Entre outros.</b>
+                  </li>
+                </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="about__perfil-2">
+        <div class="about__image">
+          <img src="assets/img/ultrasonido.jpeg" alt="image" class="about__img-section" height="400px" width="700px"
+            loading="lazy" />
+
+
+
+          <div class="about__box"></div>
+          
+        </div>
+
+      </div>
+      <button class="modal-button" data-modal="ultraformerModal">Ler mais</button>
+</section>
+
+<!-- Sección luz pulsada -->
+<section class="about section" id="about">
+  <div class="about__container container grid">
+        <h2 class="section__title-1"><span>LUZ INTENSA PULSADA</span></h2>  
+         <div class="about__image">
+            <img src="assets/img/luzIntensaPulsada.jpeg" alt="image" class="about__img-section" />
+            <div class="about__box"></div>
+       
+          </div>
+        <div class="about__perfil">
+        
+          
+          <div class="about__info">
+            <p class="about__description">
+              A <b>Luz Intensa Pulsada,</b> popularmente conhecida pela sigla IPL, é um tratamento médico estético que estimula a produção de colágeno, ao mesmo tempo que elimina a pele danificada por fatores externos e pelo envelhecimento.
+              <br>
+              É um tratamento não agressivo, que permite ao paciente realizar diversas sessões. Assim, é possível melhorar gradativamente o tom e a textura da pele.
+              <br>        
+              A IPL consiste na aplicação de luz de alta intensidade que, ao ser aplicada na pele, faz com que determinados pigmentos naturais a absorvam e a convertam em calor. Desta forma é capaz de eliminar sinais de envelhecimento, vestígios de stress na pele, manchas solares, etc. 
+            </p>
+          </div>
+          
+        </div>
+       
+        <div class="modal" id="luzIntensaPulsada">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="about__info">
+                
+                  <p class="about__description">
+                    <b>São numerosas as utilidades da IPL.</b> É eficaz para o tratamento de:
+              <br>
+              Acne vulgar, acne ativa, redução de eritema em cicatrizes pós-cirúrgicas ou pós-traumáticas, leucodermia, tratamento e controle de psoríase, lesões pigmentares em geral efélides, lentigos senis e manchas solares café-com-leite, hiperpigmentação, angiomas, hemangioma cavernoso, hemangioma rubi, telangiectasias em geral, tratamento e controle da rosácea em geral, hemangioma em geral, nevos em geral, nevo spilus, poiquilodermia de Civatte, manchas vinho-do-porto, rugas finas e marcas de expressão, rugas periorais, rugas periorbitais, estrias rubras, fotobioestimulação, depilação em todos os fototipos, pseudofoliculite de barba, queilite actínica, dermatite atópica.          
+            </p>
+                </div> 
+            </div>
+        </div>
+   <button class="modal-button" data-modal="luzIntensaPulsada">Ler mais</button>  
+  </div>  
+  </section>
+
+ <!-- Sección hollywood peel--> 
+<section class="about section" id="about">
+  <div class="about__container container grid">
+      <div class="about__info">
+        <h2 class="section__title-1">
+          <span>HOLLYWOOD PEEL</span>
+        </h2>
+        <p class="about__description">
+          <b>Hollywood peel</b> É um tratamento cutâneo a laser não invasivo e indolor que trata as imperfeições da pele.
+          Combina creme de carvão ativo e laser para oferecer um tratamento de limpeza e rejuvenescimento.           
+          A luz do laser é emitida sobre o carbono, o vaporiza eliminando instantaneamente todas as células mortas: causando um efeito rejuvenescedor.            
+          </br>
+          Seus principais benefícios são: 
+        </p>
+
+        <div class="modal" id="hollywoodModal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="about__info">
+                <ul class="about__list">
+                  <li class="about__item">
+                    <b>Melhora </b>o aspecto geral da pele.
+                  </li>
+                  <li class="about__item">
+                    <b>Elimina</b> células mortas.
+                  </li>
+                  <li class="about__item">
+                    <b>Limpa</b> e fecha os poros.
+                  </li>
+                  <li class="about__item">
+                    <b>Ilumine</b> sua pele.
+                  </li>
+                  <li class="about__item">
+                    <b>Efeito</b> lifting.
+                  </li>
+                  <li class="about__item">
+                    <b>Escurece</b> as linhas.
+                  </li>
+                  <li class="about__item">
+                    <b>Suaviza</b> a pele.
+                  </li>
+                  <li class="about__item">
+                    <b>Estimula </b>o colágeno.
+                  </li>
+                  <li class="about__item">
+                    <b>Revitalize</b> seu rosto.
+                  </li>
+                  <li class="about__item">
+                    <b>Remove</b> pequenas manchas.
+                  </li>
+                  <li class="about__item">
+                    <b>Complemento</b> ao tratamento da acne.
+                  </li>
+                  <li class="about__item">
+                    <b>Diminui </b>a produção de gordura ou sebo.
+                  </li>
+                </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="about__perfil-2">
+        <div class="about__image">
+          <img src="assets/img/HollywoodCarbon.jpeg" alt="image" class="about__img-section" height="400px" width="700px"
+            loading="lazy" />
+
+
+
+          <div class="about__box"></div>
+          
+        </div>
+
+      </div>
+      <button class="modal-button" data-modal="hollywoodModal">Ler mais</button>
+</section>
+
+<!-- Sección LASER LAVIEEN-->
+<section class="about section" id="about">
+  <div class="about__container container grid">
+        <h2 class="section__title-1"><span>LASER LAVIEEN</span></h2>  
+         <div class="about__image">
+            <img src="assets/img/hydrafacial.jpeg" alt="image" class="about__img-section" />
+       
+          </div>
+        <div class="about__perfil">
+        
+          
+      <div class="about__info">
+              <p class="about__description">
+               <b>Laser Lavieen  </b> é uma tecnologia revolucionária que chegou ao Brasil há pouco tempo. O aparelho é muito versátil e permite diversas indicações de aplicação, como o tratamento de lesões pigmentares, manchas, melasma, rugas finas, poros abertos, cicatrizes, além de oferecer uma uniformização para a pele, com melhora da textura e da aparência. Esse laser também chamado de BB Laser, pois o resultado é similar àquele quando aplicamos BB Cream na pele, mas, diferente da maquiagem, permanece por um longo período.
+
+               O efeito do Laser Lavieen é tão satisfatório, pois seus feixes têm alta afinidade com a água, o que garante a renovação dos tecidos. O calor do laser gera um dano controlado nas camadas da pele, removendo a melanina de pigmentações em excesso e trazendo mais brilho à epiderme. 
+               
+               O fato de ser um laser não ablativo, ou seja, menos agressivo à pele, permite recuperação fácil e rápida, sendo que a paciente pode voltar às suas atividades no mesmo dia. O procedimento é seguro e seus resultados podem ser vistos já na primeira sessão. 
+               
+               Benefícios do Laser Lavieen:
+               
+              </p>  
+        </div> 
+          
+        </div>
+       
+        <div class="modal" id="laserlavienModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="about__info">        
+                    <p class="about__description">Indicações do Laser Lavieen 
+                      <br>
+                      O laser pode ser aplicado na face, no colo, nas mãos e nos braços. Seus protocolos já são comprovadamente eficazes para tratar os seguintes problemas:
+                           </p>
+                  <ul class="about__list">
+                    <li class="about__item">
+                      <b>Lesões pigmentadas</b> epidérmicas e dérmicas. 
+                    </li>
+                    <li class="about__item">
+                      <b>Fotoenvelhecimento.</b>
+                    </li>
+                    <li class="about__item">
+                      <b> Hiperpigmentação</b> Pós-Inflamatória.
+                    </li>
+                    <li class="about__item">
+                      <b>Melasma.</b>
+                    </li>
+                    <li class="about__item">
+                      <b>Ceratoses Actínicas.</b> 
+                    </li>
+                    <li class="about__item">
+                      <b> Manchas Senis.</b> 
+                    </li>
+                    <li class="about__item">
+                      <b>Poros Abertos.</b>
+                    </li>
+                    <li class="about__item">
+                      <b>Rugas Finas.</b>
+                    </li>
+                    <li class="about__item">
+                      <b>Textura e coloração da pele irregular</b>
+                    </li>
+                    <li class="about__item">
+                      <b>Queda de Cabelo</b>
+                    </li>
+                    <li class="about__item">
+                      <b>Uniformização</b> da pele.
+                    </li>
+                    <li class="about__item">
+                      <b>Melhora na textura.</b>
+                    </li>
+                    <li class="about__item">
+                      <b>Menor dilatação </b>dos poros.
+                    </li>
+                    <li class="about__item">
+                     <b> Melhora </b>nas linhas finas.
+                    </li>
+                    <li class="about__item">
+                      <b>Aumento da firmeza</b> e da elasticidade da pele.
+                    </li>
+                    </ul>           
+                </div> 
+            </div>
+        </div>
+   <button class="modal-button" data-modal="laserlavienModal">Ler mais</button>  
+  </div>  
+</section>
+
+<!-- Sección LASER ERBIUM-->    
+<section class="about section" id="about">
+  <div class="about__container container grid">
+      <div class="about__info">
+        <h2 class="section__title-1">
+          <span>LASER ERBIUM</span>
+        </h2>
+        <p class="about__description">
+         <b>O laser Erbium </b> ou Erbium YAG é um laser ablativo com alta afinidade pela água encontrada nos tecidos. É capaz de remover as camadas mais superficiais da pele com mínimo dano térmico adjacente, resultando em tratamentos altamente precisos e seguros.
+
+            O laser de érbio é um tipo de laser ablativo que funciona com comprimento de onda de 2.940 nm. Essa característica lhe confere alta afinidade pela água dos tecidos sobre os quais atua, aumentando sua temperatura e vaporizando-a. Desta forma eliminamos apenas a área da pele sobre a qual atuamos. Como o dano térmico residual é mínimo, a recuperação é muito rápida e com excelentes resultados cosméticos.
+            
+            Quais as principais indicações do laser de érbio?
+            
+        </p>
+
+        <div class="modal" id="lasererbiumModal">
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="about__info">
+         
+              <p class="about__description"> <b>Seu principal uso é a eliminação de quase todas as lesões cutâneas.</b> Existem muitos tipos de verrugas, nevos, queratose seborreica e outros tumores benignos, que desejamos eliminar por desconforto local ou por razões estéticas.
+            
+              Além disso, esta remoção seletiva das camadas mais superficiais da pele permite-nos utilizá-la noutras indicações dermatológicas e estéticas como marcas de acne, remodelação de cicatrizes traumáticas ou pós-cirúrgicas, tratamento de estrias e/ou rugas que aparecem durante o processo de envelhecimento da pele. </p>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="about__perfil-2">
+        <div class="about__image">
+          <img src="assets/img/microneedling.jpeg" alt="image" class="about__img-section" height="400px" width="700px"
+            loading="lazy" />
+
+
+
+          <div class="about__box"></div>
+          
+        </div>
+
+      </div>
+      <button class="modal-button" data-modal="lasererbiumModal">Ler mais</button>
+</section>
+
+<!-- Sección LASER Q-SWITCHED-->
+<section class="about section" id="about">
+  <div class="about__container container grid">
+        <h2 class="section__title-1"><span>LASER Q-SWITCHED</span></h2>  
+         <div class="about__image">
+            <img src="assets/img/laserQswitch.jpeg" alt="image" class="about__img-section" />
+       
+          </div>
+        <div class="about__perfil">
+        
+          
+      <div class="about__info">
+              <p class="about__description">
+               <b>O laser Q-Switched (Q-SW)</b> é um laser moderno projetado especificamente para a remoção de lesões pigmentadas, superficiais e profundas, como manchas solares ou senis, tatuagens ou algumas manchas. Esta tecnologia emite energia em nanossegundos, produzindo a fragmentação do pigmento e sua eliminação.
+
+                Geralmente são necessárias entre 1 e 2 sessões para eliminar a lesão, mas manchas mais claras podem exigir mais algumas sessões. Lesões pigmentadas comuns não reaparecem, mas algumas marcas de nascença podem reaparecer após alguns meses ou um ano. Em qualquer caso, o procedimento para eliminá-los pode ser repetido. Nas tatuagens, em média, são necessárias entre 4 e 8 sessões a cada dois meses para remover uma tatuagem, dependendo de sua profundidade e tamanho.
+                
+              <b>Entre os benefícios do Laser, gosto de destacar:</b>     
+              </p>
+            
+  
+        </div> 
+  
+        </div>
+       
+        <div class="modal" id="laserqswitchedlModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="about__info">
+                    <ul class="about__list">
+                     
+                        <li class="about__item">
+                          <b>Eficácia</b>na remoção de tatuagens multicoloridas.
+                        </li>
+                        <li class="about__item">
+                          <b>Tratamento</b>e controle de melasma e lesões pigmentadas. 
+                        </li>
+                        <li class="about__item">
+                          <b>Indicação </b>ampliada para: nevos, manchas café com leite, lentigos senis e solares, melanoses, efélides, hiperpigmentação pós-inflamatória e ceratoses seborreicas. 
+                        </li>
+                        <li class="about__item">
+                          <b>Depilação</b>em todos os fototipos.
+                        </li>
+                    
+                    </ul>           
+                </div> 
+            </div>
+        </div>
+   <button class="modal-button" data-modal="laserqswitchedlModal">Más Info</button>  
+  </div>  
+  </section>
+
+  <!-- Sección Morpheus -->
+<section class="about section" id="about">
+  <div class="about__container container grid">
+        <h2 class="section__title-1"><span>MORPHEUS</span></h2>  
+         <div class="about__image">
+            <img src="assets/img/Morpheus.jpeg" alt="image" class="about__img-section" />
+       
+          </div>
+        <div class="about__perfil">
+        
+          
+      <div class="about__info">
+              <p class="about__description">
+                <b>Remodelação fracionada do tecido subdérmico</b>
+                <br>
+                Morpheus8 é o primeiro e único dispositivo do mundo que atua no tecido subdérmico corporal e facial para tratar celulite e gordura localizada, bem como para transformar características de envelhecimento e alcançar uma aparência mais jovem. 
+                <br>
+                É uma radiofrequência fracionada que penetra a uma profundidade de 7 milímetros com um perfil térmico adicional de 1 milímetro e um nível de energia programável. Morpheus8 possui quatro aplicadores de microagulhas intercambiáveis compostos por quatro cabeças para trabalhar em diferentes áreas, tanto faciais quanto corporais: 12 pinos, 24 pinos fixados em 0,5 mm para ação resurfacing e 40 pinos de Teflon revestidos de ouro que penetram no tecido subdérmico, coagulando a gordura. Simultaneamente, a energia RF gera aquecimento subnecrótico da derme.
+                
+              </p>
+        
+    
+        </div> 
+          
+        </div>
+       
+        <div class="modal" id="morpheolModal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="about__info">
+
+                  <p class="about__description">
+                  <b>Morpheus </b>
+                    É um tratamento minimamente invasivo, seguro e altamente eficaz com resultados imediatos e visíveis desde a primeira sessão. Quando usado em conjunto com o FaceTite, o Morpheus8 é a solução perfeita para pacientes com flacidez e irregularidades na superfície da pele. Com esta combinação, alcançamos resultados imediatos e melhoria progressiva ao longo do tempo.
+                    <br>
+                    ¿Quais áreas são recomendadas para tratar com Morpheus?
+                    <br>
+                    Morpheus é recomendado para todos os tipos de pessoas que desejam modificar os sinais de envelhecimento e conseguir uma pele mais radiante. Além disso, esta nova tecnologia oferece uma ampla gama de áreas para melhorar a nossa pele. Alguns deles são descritos abaixo:
+                  </p>
+                    <ul class="about__list">
+                      <li class="about__item">
+                        <b>Atua na flacidez</b>facial e pescoço até o decote.
+                      </li>
+                      <li class="about__item">
+                        <b>	Reduz a presença </b>de rugas finas e dobras nas zonas nasolabiais, maçãs do rosto e queixo.
+                      </li>  
+                      <li class="about__item">
+                        <b>Reduz os acúmulos</b> de gordura localizada no corpo graças às agulhas Morpheus de 4 a 7 mm. A energia térmica das agulhas atuará sobre essa gordura, dissolvendo-a.
+                      </li>
+                      <li class="about__item">
+                        <b>Reduz a presença</b> de rugas de expressão na zona facial.
+                      </li>
+                      <li class="about__item">
+                        <b>Suaviza estrias,</b> cicatrizes e marcas de acne no rosto.
+                      </li>
+                      <li class="about__item">
+                        <b>Reduz a flacidez</b> corporal de braços, abdômen, coxas e glúteos.
+                      </li>
+                    </ul>           
+                </div> 
+            </div>
+        </div>
+   <button class="modal-button" data-modal="morpheolModal">Ler mais</button>  
+   <div class="about__buttons">
+    <a href="./index.html#contact" class="button">
+      <i class="ri-send-plane-line"></i> Contactame
+    </a>
+    <a href="https://www.instagram.com/" class="contact__social-link" target="_blank">
+      <i class="ri-instagram-line"></i>
+    </a>
+  </div>
+  </div>  
+  </section>
+
     <!--==================== FOOTER ====================-->
+
     <footer class="footer">
       <div class="footer__container container grid">
         <ul class="footer__links">
           <li>
-            <a href="./index.html#home" class="footer__link">Inicio</a>
+            <a href="./index.html#home"  class="footer__link">Início</a>
           </li>
-
+  
           <li>
-            <a href="./index.html#about" class="footer__link">Sobre mi </a>
-          </li>
-          <li >
-            <a href="./index.html#service" class="footer__link">Tratamientos</a>
+            <a href="./index.html#about" class="footer__link">Sobre mim</a>
           </li>
           <li>
-            <a href="./index.html#projects" class="footer__link">Testimonios</a>
+            <a href="./index.html#service" class="footer__link">Tratamentos</a>
+          </li>
+          <li>
+            <a href="./index.html#projects" class="footer__link">Testemunhos</a>
           </li>
         </ul>
-
+  
         <span class="footer__copy">
-          &#169; Todos los derechos
-          <a href="www.nicoleconde.com"> Rodder Marcano.</a>
+          &#169; Todos os direitos
+          <a href=""> Rodder Marcano.</a>
+          - By
+          <a href="www.nicoleconde.com"> Nicole Conde</a>
         </span>
       </div>
+
     </footer>
 
     <!--========== SCROLL UP ==========-->
@@ -215,5 +771,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
+
+
