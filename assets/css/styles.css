@@ -451,7 +451,7 @@ body.dark-theme {
   text-align: center;
   font-family: "Gloock", serif;
   margin: 0rem 1rem 0.1rem 1rem;
-  position: absolute;
+  /* position: absolute; */
   top: 33rem;
 
 }
@@ -1185,7 +1185,7 @@ color: #090909;
 .footer__link {
   color: var(--white-color);
   transition: color 0.4s;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .footer__link:hover {
@@ -2125,3 +2125,20 @@ margin-bottom: 2rem;
     object-fit: cover;
 
   }
+
+  .about__link {
+    color: black;
+font-style: italic;
+cursor: pointer;
+  }
+
+
+
+  .about__link:hover {
+    color:  #845C13;
+    text-decoration: underline;
+    
+  }
+
+
+ 
