@@ -2026,9 +2026,12 @@ color: black;
 
 
 .projects__image-container-brand{
-  border-radius: 15px;
-  width: 320px;
-  height: 150px;
+  
+    border-radius: 15px;
+    width: 290px;
+    height: 150px;
+    margin-left: 1rem;
+
   background-color: #fff;
 }
 
