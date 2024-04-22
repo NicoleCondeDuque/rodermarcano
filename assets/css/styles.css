@@ -1362,7 +1362,7 @@ color: #090909;
   }
   .nav__list {
     flex-direction: row;
-    column-gap: 4rem;
+    column-gap: 2rem;
   }
   .nav__menu {
     margin-left: auto;
