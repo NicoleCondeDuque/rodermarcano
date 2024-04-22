@@ -736,6 +736,14 @@ color: #090909;
   top: 0.5rem;
 }
 
+@media (max-width: 1150px) {
+  .description-1 {
+    margin-top: -1.9rem;
+  }
+  
+}
+
+
 .about__list {
   list-style: square;
   color: var(--title-color);
@@ -1948,7 +1956,7 @@ color: black;
   top: 50%;
   transform: translateY(-50%);
   color: #e8e8e8;;
-  padding: 0.2em 0.2em;
+  padding: 0.1em 0.3em
   font-size: 25px;
   border-radius: 0.5em;
   background: #845C13;
@@ -2066,8 +2074,7 @@ color: black;
 }
 
 /* MODALES */
-/* Estilos básicos para el modal */
-/* Estilos para el modal */
+
 .modal {
   display: none;
   position: fixed;
@@ -2121,12 +2128,44 @@ margin-bottom: 2rem;
 
   .about__img-section {
     /* position: relative; */
-    border: 4px solid var(--white-color);
-    z-index: 1;
-    height: 350px;
-    width: 400px;
-    object-fit: cover;
 
+    z-index: 1;
+  
+    object-fit: cover;
+    width: 390px;
+    height: 354px;
+    background: white;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(190, 190, 190),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+  }
+
+
+  .about__img-section-2{
+    z-index: 1;
+    object-fit: cover;
+    width: 390px;
+    height: 354px;
+    background: white;
+    border-radius: 10px;
+    transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(190, 190, 190),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    margin-top: -4rem;
+    margin-bottom: 1rem;;
+
+  }
+
+  @media (min-width: 1151px) {
+    .about__img-section-2{
+      margin-top: 4rem; 
+  
+    }
+    
   }
 
   .about__link {
