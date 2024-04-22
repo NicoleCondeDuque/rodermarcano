@@ -778,8 +778,6 @@ color: #090909;
   background-attachment: fixed;
   width: 100%;
   height: auto;
-  
- 
 }
 
 @supports ( -webkit-touch-callout: none){
@@ -799,9 +797,10 @@ color: #090909;
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .background__rod-1 {
-    background-image: url("../img/background-withrod-tablet.png");
+    background-image: url("../img/background-withrod-ipad.png");
     width: 100%;
     height: auto;
+   
   }
 }
 
@@ -1956,7 +1955,7 @@ color: black;
   top: 50%;
   transform: translateY(-50%);
   color: #e8e8e8;;
-  padding: 0.1em 0.3em
+    padding: 0.1em 0.3em;
   font-size: 25px;
   border-radius: 0.5em;
   background: #845C13;
