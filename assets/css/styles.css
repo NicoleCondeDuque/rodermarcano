@@ -1989,6 +1989,16 @@ color: black;
   right: 0;
 }
 
+.antes-prev{
+  left: 0;
+}
+
+
+.antes-next{
+  right: 0;
+}
+
+
 .prev {
   left: 0;
 }
@@ -2223,7 +2233,7 @@ cursor: pointer;
     border-radius: 15px;
     box-shadow: inset 8px 8px 10px #c3c3c3,
               inset -8px -8px 10px #cfcfcf;
-   background-image: url("../img/background-rod.jpeg");
+   background-image: url("../img/DocDoc.png");
    background-size: cover;
 
   }
@@ -2238,9 +2248,31 @@ cursor: pointer;
     float: right;
     margin: 28px 0 0 18px;
     font-size: 13px;
-    color: #636363;
-  }
+    color: #c0bbbb;
+    padding: 0.7em 1.7em;
+    border-radius: 0.5em;
+    background:#2C3C91;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
   
   .by-name {
     font-weight: 700;
+  }
+
+
+
+  .projects__antes {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: 160px;
+    height: 238px;
+    object-fit: cover;
+
   }

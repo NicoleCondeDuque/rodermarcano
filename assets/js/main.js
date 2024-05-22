@@ -60,44 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 
-  // Cerrar el modal al hacer clic fuera de él
-  // window.addEventListener('click', (event) => {
-  //     if (event.target.className.includes('modal')) {
-  //         event.target.style.display = 'none';
-  //     }
-  // });
+
 });
 
 
-/*=============== EMAIL JS ===============*/
-// const contactForm = document.getElementById("contact-form"),
-//   contactMessage = document.getElementById("contact-message");
-
-// const sendEmail = (e) => {
-//   e.preventDefault();
-
-//   // serviceID - templateID - #form - publicKey
-//   emailjs.sendForm("", "", "#contact-form", "").then(
-//     () => {
-//       // Show sent message
-//       contactMessage.textContent = "Message sent successfully ✅";
-
-//       // Remove message after five seconds
-//       setTimeout(() => {
-//         contactMessage.textContent = "";
-//       }, 5000);
-
-//       // Clear input fields
-//       contactForm.reset();
-//     },
-//     () => {
-//       // Show error message
-//       contactMessage.textContent = "Message not sent (service error) ❌";
-//     }
-//   );
-// };
-
-// contactForm.addEventListener("submit", sendEmail);
 
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
@@ -109,28 +75,7 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-// const sections = document.querySelectorAll("section[id]");
 
-// const scrollActive = () => {
-//   const scrollDown = window.scrollY;
-
-//   sections.forEach((current) => {
-//     const sectionHeight = current.offsetHeight,
-//       sectionTop = current.offsetTop - 58,
-//       sectionId = current.getAttribute("id"),
-//       sectionsClass = document.querySelector(
-//         ".nav__menu a[href*=" + sectionId + "]"
-//       );
-
-//     if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
-//       sectionsClass.classList.add("active-link");
-//     } else {
-//       sectionsClass.classList.remove("active-link");
-//     }
-//   });
-// };
-// window.addEventListener("scroll", scrollActive);
 
 /*=============== DARK LIGHT THEME ===============*/
 const themeButton = document.getElementById("theme-button");
@@ -247,33 +192,45 @@ document.addEventListener('DOMContentLoaded', function() {
 /*=============== carrusel marcas ===============*/
 
 document.addEventListener('DOMContentLoaded', function() {
-
-  function scrollCarousel(carouselSelector, offset) {
+  function initCarousel(carouselSelector, prevButtonSelector, nextButtonSelector) {
     const carousel = document.querySelector(carouselSelector);
-    const cards = carousel.querySelectorAll('.projects__brand'); //
-    const cardStyle = window.getComputedStyle(cards[0]);
-    const cardMarginRight = parseInt(cardStyle.marginRight, 10);
-    const cardWidth = cards[0].offsetWidth + cardMarginRight;
-    
-    carousel.scrollBy(cardWidth * offset, 0);
+    const btnPrev = document.querySelector(prevButtonSelector);
+    const btnNext = document.querySelector(nextButtonSelector);
+    const cards = carousel.querySelectorAll('.projects__brand');
+
+    function scrollCarousel(offset) {
+      const cardStyle = window.getComputedStyle(cards[0]);
+      const cardMarginRight = parseInt(cardStyle.marginRight, 10);
+      const cardWidth = cards[0].offsetWidth + cardMarginRight;
+      const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+
+      let newScrollPosition = carousel.scrollLeft + (cardWidth * offset);
+
+      if (newScrollPosition < 0) {
+        carousel.scrollTo(maxScrollLeft, 0);
+      } else if (newScrollPosition > maxScrollLeft) {
+        carousel.scrollTo(0, 0);
+      } else {
+        carousel.scrollTo(newScrollPosition, 0);
+      }
+    }
+
+    btnPrev.addEventListener('click', function() {
+      scrollCarousel(-1);
+    });
+
+    btnNext.addEventListener('click', function() {
+      scrollCarousel(1);
+    });
   }
 
+  // Inicializar carrusel de Marcas
+  initCarousel('.brands__container', '.brands-prev', '.brands-next');
 
-  document.querySelector('.button__tratamientos.prev').addEventListener('click', function() {
-    scrollCarousel('.projects__container', -1);
-  });
-  document.querySelector('.button__tratamientos.next').addEventListener('click', function() {
-    scrollCarousel('.projects__container', 1);
-  });
-
-
-  document.querySelector('.brands-prev').addEventListener('click', function() {
-    scrollCarousel('.brands__container', -1);
-  });
-  document.querySelector('.brands-next').addEventListener('click', function() {
-    scrollCarousel('.brands__container', 1);
-  });
+  // Inicializar carrusel de Antes y Después
+  initCarousel('.antes__container', '.antes-prev', '.antes-next');
 });
+
 
 
 
