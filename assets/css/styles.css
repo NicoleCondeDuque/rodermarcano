@@ -125,7 +125,7 @@ img {
 
 .change-theme {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: hsl(0deg 0% 87.06%);
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -1411,7 +1411,7 @@ display: flex;
   }
 
   .change-theme {
-    color: var(--text-color);
+    color: hsl(0deg 0% 87.06%);
   }
   .change-theme:hover {
     color: var(--title-color);
